@@ -15,8 +15,6 @@ procedure LinkSort is
     Again: LegalResponse := affirmative;
     Pt: Integer;
     SortByJob: Array(JobType) of Integer := (others => 0);
-
-
    --funcions for inserting into list; weird solution but works
     function Get_JobType return JobType is
     gJob : JobType;
@@ -38,7 +36,7 @@ function Get_Model return ModelName is
     gModel : ModelName;
 begin
     Put("Enter Vehicle Model: ");
-    ModelName_IO.Get(gModel); -- Corrected to use the right IO package
+    ModelName_IO.Get(gModel);
     return gModel;
 end Get_Model;
 
@@ -46,7 +44,7 @@ function Get_Manu return Manufacturer is
     gManu : Manufacturer;
 begin
     Put("Enter Manufacturer: ");
-    Manufacturer_IO.Get(gManu); -- Corrected to use the right IO package
+    Manufacturer_IO.Get(gManu);
     return gManu;
 end Get_Manu;
 
@@ -61,7 +59,7 @@ end GetVehInt;
 function Get_Name return EmpName is
     gName : EmpName;
 begin
-    Put("Enter Employee Name: "); -- Corrected prompt for clarity
+    Put("Enter Employee Name: ");
     EmpNameIO.Get(gName);
     return gName;
 end Get_Name;
@@ -109,10 +107,17 @@ end MakeEmp;
 begin
     Emp_List.Init(Emps, Avail);
 
-    while Again in PositiveResponse loop
-        Emp_List.Insert(Emps, Avail, MakeEmp);
-        Put("Enter another name (yup or nope): ");
-        LegalIO.Get(Again);
+    loop
+        begin
+            Emp_List.Insert(Emps, Avail, MakeEmp);
+            -- Removed the prompt and LegalIO.Get(Again) for continuation check
+        exception
+            when Data_Error =>
+                exit; -- Exits the loop on EOF or invalid data error
+            when others =>
+                Put_Line("An unexpected error occurred.");
+                exit;
+        end;
     end loop;
 
    for J in JobType loop
