@@ -21,7 +21,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 
-U structures%s		structures.ads		7ad160f6 EE OO PF PK IL
+U structures%s		structures.ads		67ae5b82 EE OO PF PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.streams%s		a-stream.adb		a-stream.ali
@@ -51,7 +51,7 @@ D a-tienio.adb		20210520051130 c9e6b5af ada.text_io.enumeration_io%b
 D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20210520051132 edec285f interfaces%s
 D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
-D structures.ads	20240331194438 d425b59b structures%s
+D structures.ads	20240331224750 c95a8eef structures%s
 D system.ads		20210520051136 2ffa5114 system%s
 D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
 D s-exctab.ads		20210520051132 54135002 system.exception_table%s
@@ -111,7 +111,8 @@ G c Z s s [carIP structures 51 9 none]
 G c Z s s [planeDA structures 55 9 none]
 G c Z s s [planeDF structures 55 9 none]
 G c Z s s [planeIP structures 55 9 none]
-G c Z s s [empIP structures 59 6 none]
+G c Z s s [vehicle_nodeIP structures 60 9 none]
+G c Z s s [empIP structures 65 6 none]
 X 1 ada.ads
 16K9*Ada 20e8 16|1r6 1r23 10r29 19r29 27r35 35r32 42r28
 X 9 a-textio.ads
@@ -119,8 +120,8 @@ X 9 a-textio.ads
 X 11 a-tienio.ads
 26k21*Enumeration_IO 76e31 16|10r41 19r41 27r47 35r44 42r40
 X 16 structures.ads
-3K9*structures 70l5 70e15
-5E9*JobType 8e5 10r56 61r9
+3K9*structures 76l5 76e15
+5E9*JobType 8e5 10r56 67r9
 6n7*Programmer{5E9}
 6n19*Manager{5E9}
 6n28*Accountant{5E9}
@@ -130,7 +131,7 @@ X 16 structures.ads
 7n29*Inventory{5E9}
 7n40*SoftwareEngineer{5E9}
 10K12*JobTypeIO[11|26] 11r8
-13E9*EmpName 17e5 19r56 60r10
+13E9*EmpName 17e5 19r56 66r10
 14n7*David{13E9}
 14n14*Kevin{13E9}
 14n21*Sam{13E9}
@@ -183,7 +184,7 @@ X 16 structures.ads
 39n40*Silver{38E9}
 39n48*Camo{38E9}
 42K12*Color_IO[11|26] 43r8
-45H9*vehicle_type 49e14 51r20 55r22 63r20
+45H9*vehicle_type 49e14 51r20 55r22 61r18 69r20
 46e7*Manu{22E11}
 47e7*Model{30E9}
 48e7*VehColor{38E9}
@@ -191,11 +192,15 @@ X 16 structures.ads
 52i7*Doors{integer}
 55R9*Plane<45R9> 57e14
 56i7*NumEngines{integer}
-59R6*Emp 66e11
-60e4*Name{13E9}
-61e4*Job{5E9}
-62i4*Age{integer}
-63p4*Vehicle(45R9)
-64i4*Next{integer}
-65i4*Prev{integer}
+58R9*Vehicle_Node 59r31 60c9 63e14
+59P9*Vehicle_Ptr(58R9) 62r11
+61p4*Data(45R9)
+62p4*Next{59P9}
+65R6*Emp 72e11
+66e4*Name{13E9}
+67e4*Job{5E9}
+68i4*Age{integer}
+69p4*Vehicle(45R9)
+70i4*Next{integer}
+71i4*Prev{integer}
 

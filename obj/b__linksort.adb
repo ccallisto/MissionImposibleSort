@@ -293,11 +293,11 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   D:\obj\structures.o
-   --   D:\obj\doublylinkedlist.o
-   --   D:\obj\linksort.o
-   --   -LD:\obj\
-   --   -LD:\obj\
+   --   D:\MissionImpossible\obj\structures.o
+   --   D:\MissionImpossible\obj\doublylinkedlist.o
+   --   D:\MissionImpossible\obj\linksort.o
+   --   -LD:\MissionImpossible\obj\
+   --   -LD:\MissionImpossible\obj\
    --   -LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
    --   -static
    --   -lgnat

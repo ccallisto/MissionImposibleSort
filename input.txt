@@ -1,14 +1,2 @@
 Kevin Analysist 23
-Ford Expedition 4 Blue 
-Ben    Manager    57
-Ford Raptor 4  Red 
-Sable Accountant 26
-GMC  Pickup    2 White 
-Bob
-Manager
-43
-Dodge Devil 2 Orange 
-Teddy  Programmer  17
-Chevrolet Camaro  4 Black 
-Donald Sales 36
-Ford Expedition  4  White 
+Ford Expedition Blue 4 

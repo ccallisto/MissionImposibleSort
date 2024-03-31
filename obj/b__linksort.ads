@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#e00437da#;
+   u00001 : constant Version_32 := 16#cc05fd74#;
    pragma Export (C, u00001, "linksortB");
    u00002 : constant Version_32 := 16#2e11c0b1#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -316,11 +316,11 @@ package ada_main is
    pragma Export (C, u00137, "ada__text_io__enumeration_auxB");
    u00138 : constant Version_32 := 16#c468c016#;
    pragma Export (C, u00138, "ada__text_io__enumeration_auxS");
-   u00139 : constant Version_32 := 16#2f795083#;
+   u00139 : constant Version_32 := 16#32066bf7#;
    pragma Export (C, u00139, "doublylinkedlistB");
-   u00140 : constant Version_32 := 16#76207c26#;
+   u00140 : constant Version_32 := 16#6b5f4752#;
    pragma Export (C, u00140, "doublylinkedlistS");
-   u00141 : constant Version_32 := 16#7ad160f6#;
+   u00141 : constant Version_32 := 16#67ae5b82#;
    pragma Export (C, u00141, "structuresS");
    u00142 : constant Version_32 := 16#c9a3fcbc#;
    pragma Export (C, u00142, "system__stream_attributesB");

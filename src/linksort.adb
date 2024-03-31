@@ -4,7 +4,6 @@ with DoublyLinkedList;
 with structures; use structures;
 
 procedure LinkSort is
-   Input_File : File_Type;
     type LegalResponse is (yup, affirmative, nope, negative);
     subtype PositiveResponse is LegalResponse range yup..affirmative;
     package LegalIO is new Ada.Text_IO.Enumeration_IO(LegalResponse);
@@ -79,8 +78,8 @@ function MakeEmp return Emp is
     Employee : Emp;
     TempManu : Manufacturer;
     TempModel : ModelName;
-    TempDoors : Integer;  -- Used for Cars
-    TempNumEngines : Integer;  -- Assume this is for Planes
+    TempDoors : Integer;
+    TempNumEngines : Integer;
     TempVehColor : Color;
 begin
     Employee.Name := Get_Name;
@@ -89,15 +88,14 @@ begin
 
     TempManu := Get_Manu;
     TempModel := Get_Model;
+    TempDoors := GetVehInt;
     TempVehColor := Get_Color;
 
-    -- Assuming GetVehInt can be used for both Doors and NumEngines, adjust as needed
-    TempDoors := GetVehInt;  -- Assuming this gets an integer value appropriate for either doors or engines
 
-    -- Determine whether to create a Car or Plane based on Manufacturer
+
     if TempManu = GeneralDynamics or TempManu = Grumman or TempManu = Lockheed or TempManu = Boeing then
-        -- Assume you have a way to get the number of engines for a plane
-        TempNumEngines := TempDoors;  -- Or however you determine this value for planes
+
+        TempNumEngines := TempDoors;
         Employee.Vehicle := new Plane'(Manu => TempManu, Model => TempModel, VehColor => TempVehColor, NumEngines => TempNumEngines);
     else
         Employee.Vehicle := new Car'(Manu => TempManu, Model => TempModel, VehColor => TempVehColor, Doors => TempDoors);
@@ -109,25 +107,12 @@ end MakeEmp;
 
 
 begin
-   begin
-        Open(File => Input_File, Mode => In_File, Name => "input.txt");
-    exception
-        when E : others =>
-            Put_Line("Failed to open input.txt: " );
-            return;
-    end;
     Emp_List.Init(Emps, Avail);
 
-    while not End_Of_File(Input_File) loop
+    while Again in PositiveResponse loop
         Emp_List.Insert(Emps, Avail, MakeEmp);
-        -- MakeEmp and all input functions it calls need to be adjusted to read from Input_File
-    end loop;
-
-    Close(Input_File); -- Close the file when done reading
-
-    for J in structures.JobType loop
-        -- Initialize heads
-        SortByJob(J) := 0;
+        Put("Enter another name (yup or nope): ");
+        LegalIO.Get(Again);
     end loop;
 
    for J in JobType loop
@@ -151,26 +136,31 @@ begin
         end if;
 
       while Pt /= 0 loop
-   Put(EmpName'Image(Emps(Pt).Name)); -- Employee's name
+   Put(EmpName'Image(Emps(Pt).Name));
    Put(" ");
-   Put(Integer'Image(Emps(Pt).Age)); -- Employee's age
+   Put(Integer'Image(Emps(Pt).Age));
    Put(" ");
-   Put(JobType'Image(Emps(Pt).Job)); -- Employee's job
+   Put(JobType'Image(Emps(Pt).Job));
       if Emps(Pt).Vehicle /= null then
-      -- Print general vehicle information
       Put(" , ");
       Put(Manufacturer'Image(Emps(Pt).Vehicle.Manu));
       Put("  ");
       Put(ModelName'Image(Emps(Pt).Vehicle.Model));
       Put("  ");
       Put(Color'Image(Emps(Pt).Vehicle.VehColor));
-
+      Put("  ");
+      if Emps(Pt).Vehicle.all in Car then
+         Put(" Doors: ");
+         Put(Integer'Image(Car(Emps(Pt).Vehicle.all).Doors));
+      elsif Emps(Pt).Vehicle.all in Plane then
+         Put(" Engines: ");
+         Put(Integer'Image(Plane(Emps(Pt).Vehicle.all).NumEngines));
+      end if;
    end if;
    Put(" link = ");
    Put(Integer'Image(Emps(Pt).Next));
    New_Line;
 
-   -- Check if the vehicle is not null
 
 
    New_Line;
