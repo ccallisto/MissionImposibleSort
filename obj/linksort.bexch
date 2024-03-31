@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__linksort.o
+[PROJECT FILES]
+D:\missionimpossiblesort.gpr
+20240331183022 a2104407a46308f4f7e4f7fd28beaf97
+[BOUND OBJECT FILES]
+D:\obj\structures.o
+D:\obj\doublylinkedlist.o
+D:\obj\linksort.o
+[GENERATED SOURCE FILES]
+b__linksort.ads
+b__linksort.adb
+b__linksort.ali
+[RESULTING OPTIONS]
+-LD:\obj\
+-LD:\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

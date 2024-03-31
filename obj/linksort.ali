@@ -1,0 +1,215 @@
+V "GNAT Lib v2021"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_ANONYMOUS_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+
+U linksort%b		linksort.adb		e00437da NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.enumeration_aux%s  a-tienau.adb	a-tienau.ali
+Z ada.text_io.enumeration_io%s
+W doublylinkedlist%s	doublylinkedlist.adb	doublylinkedlist.ali
+W structures%s		structures.ads		structures.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
+Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+Z system.val_enum_8%s	s-vaenu8.ads		s-vaenu8.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-finali.ads		20210520051128 bf4f806b ada.finalization%s
+D a-inteio.ads		20210520051128 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tienau.ads		20210520051130 6a9c157b ada.text_io.enumeration_aux%s
+D a-tienio.ads		20210520051130 2e79c9bf ada.text_io.enumeration_io%s
+D a-tienio.adb		20210520051130 c9e6b5af ada.text_io.enumeration_io%b
+D a-tiinio.ads		20210520051130 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D doublylinkedlist.ads	20240331183104 a205c9bd doublylinkedlist%s
+D doublylinkedlist.adb	20240331183112 f7adf9c8 doublylinkedlist%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D linksort.adb		20240331200642 ce9b1735 linksort%b
+D structures.ads	20240331194438 d425b59b structures%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-conca2.ads		20210520051132 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-finmas.ads		20210520051132 1ab4dba8 system.finalization_masters%s
+D s-finroo.ads		20210520051132 4ff27390 system.finalization_root%s
+D s-imagei.ads		20210520051134 0d3f86a7 system.image_i%s
+D s-imgint.ads		20210520051134 bdb6f5ec system.img_int%s
+D s-memory.ads		20210520051134 597d6634 system.memory%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-pooglo.ads		20210520051134 ede33ef8 system.pool_global%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stalib.adb		20210520051134 977290bf system.standard_library%b
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20210520051134 e9fa2dd8 system.storage_pools%s
+D s-stposu.ads		20210520051134 e251976f system.storage_pools.subpools%s
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-vaenu8.ads		20210520051134 b7b91426 system.val_enum_8%s
+D s-valuen.ads		20210520051134 72b74993 system.value_n%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z b b [linksort standard 6 11 none]
+G r i none [linksort standard 6 11 none] [doublylinkedlist standard 6 9 none]
+G r s emp [linksort standard 6 11 none] [empIP structures 59 6 none]
+X 1 ada.ads
+16K9*Ada 20e8 21|1r6 1r23 2r6 2r31 10r28
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[15|46] 21|2w10 2r35
+X 11 a-textio.ads
+58K13*Text_IO 725e16 21|1w10 1r27 10r32
+65P9*File_Type 21|7r17
+67n23*In_File{67E9} 21|113r42
+112U14*Open 21|113s9
+113p7 File{65P9} 21|113r14
+114e7 Mode{67E9} 21|113r34
+115a7 Name{string} 21|113r51
+127U14*Close 21|126s5
+262U14*New_Line 21|144s9 146s9 171s4 176s4
+310V13*End_Of_File{boolean} 21|121s15
+463U14*Put 21|25s5 33s5 41s5 49s5 57s5 65s5 73s5 145s9 154s4 155s4 156s4
+. 157s4 158s4 161s7 162s7 163s7 164s7 165s7 166s7 169s4 170s4
+506U14*Put_Line 21|116s13
+X 13 a-tienio.ads
+26k21*Enumeration_IO 76e31 21|10r40
+34U14*Get 21|26s15[22|10] 42s18[22|35] 50s21[22|27] 66s15[22|19] 74s14[22|42]
+X 15 a-tiinio.ads
+59U14*Get 21|34s5[4|18] 58s5[4|18]
+60i7 Item{integer} 21|34r9[4|18] 58r9[4|18]
+X 17 doublylinkedlist.ads
+6k9*DoublyLinkedList 14e21 21|3w6 13r28
+8A12 listArr(22|59R6)<integer> 21|14r21[13]
+10U17 Init 21|119s14[13]
+11U17 Insert 21|122s18[13]
+X 21 linksort.adb
+6U11*LinkSort 6b11 180l5 180t13
+7p4 Input_File{11|65P9} 113m22 113r22 121r27 126m11 126r11
+8E10 LegalResponse 8e61 9r33 10r55 16r12
+8n28 yup{8E10} 9r53
+8n33 affirmative{8E10} 9r58 16r29
+8n46 nope{8E10}
+8n52 negative{8E10}
+9E13 PositiveResponse{8E10}
+10K13 LegalIO[13|26] 11r9
+13K12 Emp_List[17|6] 14r12 119r5 122r9
+14a5 Emps{17|8A12[13]} 119m19 119r19 122m25 122r25 139r26 140r27 150r19 154r22
+. 156r22 158r22 159r10 162r30 164r27 166r23 170r22 177r10
+15i5 Avail{integer} 119m25 119r25 122m31 122r31 138r23
+16e5 Again{8E10}
+17i5 Pt{integer} 148m9 149r12 150m13 150r24 153r13 154r27 156r27 158r27 159r15
+. 162r35 164r32 166r28 170r27 177m4 177r15
+18a5 SortByJob(integer) 130m9 135m13 139r16 140m17 148r15
+22V14 Get_JobType{22|5E9} 22b14 28l5 28t16 87s21
+23e5 gJob{22|5E9} 26m19 27r12
+30V10 Get_Age{integer} 30b10 36l5 36t12 88s21
+31i5 gAge{integer} 34m17 35r12
+38V10 Get_Model{22|30E9} 38b10 44l5 44t14 91s18
+39e5 gModel{22|30E9} 42m22 43r12
+46V10 Get_Manu{22|22E11} 46b10 52l5 52t13 90s17
+47e5 gManu{22|22E11} 50m25 51r12
+54V10 GetVehInt{integer} 54b10 60l5 60t14 95s18
+55i5 doors{integer} 58m17 59r12
+62V10 Get_Name{22|13E9} 62b10 68l5 68t13 86s22
+63e5 gName{22|13E9} 66m19 67r12
+70V10 Get_Color{22|38E9} 70b10 76l5 76t14 92s21
+71e5 gColor{22|38E9} 74m18 75r12
+78V10 MakeEmp{22|59R6} 78b10 107l5 107t12 122s38
+79r5 Employee{22|59R6} 86m5 87m5 88m5 101m9 103m9 106r12
+80e5 TempManu{22|22E11} 90m5 98r8 98r38 98r60 98r83 101r48 103r46
+81e5 TempModel{22|30E9} 91m5 101r67 103r65
+82i5 TempDoors{integer} 95m5 100r27 103r111
+83i5 TempNumEngines{integer} 100m9 101r118
+84e5 TempVehColor{22|38E9} 92m5 101r90 103r88
+115r14 E{2|53R9}
+128e9 J{22|5E9} 130r19
+133e8 J{22|5E9} 135r23
+138i13 I{integer} 139r31 140r32 140r43
+143e9 I{22|5E9} 145r43 148r25
+X 22 structures.ads
+3K9*structures 21|4w6 4r22 128r14 22|70e15
+5E9*JobType 21|18r22 22r33 23r12 128r25 133r13 143r14 145r29 158r8 22|8e5
+10K12*JobTypeIO[13|26] 21|26r5
+13E9*EmpName 21|62r26 63r13 154r8 22|17e5
+19K12*EmpNameIO[13|26] 21|66r5
+22E11*Manufacturer 21|46r26 47r13 80r16 162r11 22|25e5
+24n7*GeneralDynamics{22E11} 21|98r19
+24n24*Grumman{22E11} 21|98r49
+24n33*Lockheed{22E11} 21|98r71
+24n43*Boeing{22E11} 21|98r94
+27K12*Manufacturer_IO[13|26] 21|50r5
+30E9*ModelName 21|38r27 39r14 81r17 164r11 22|33e5
+35K12*ModelName_IO[13|26] 21|42r5
+38E9*Color 21|70r27 71r14 84r20 166r11 22|40e5
+42K12*Color_IO[13|26] 21|74r5
+46e7*Manu{22E11} 21|101m40 103m38 162r47
+47e7*Model{30E9} 21|101m58 103m56 164r44
+48e7*VehColor{38E9} 21|101m78 103m76 166r40
+51R9*Car<45R9> 21|103r33 22|53e14
+52i7*Doors{integer} 21|103m102
+55R9*Plane<45R9> 21|101r33 22|57e14
+56i7*NumEngines{integer} 21|101m104
+59R6*Emp 21|13r45 78r25 79r16 22|66e11
+60e4*Name{13E9} 21|86m14 154r31
+61e4*Job{5E9} 21|87m14 139r34 140r35 158r31
+62i4*Age{integer} 21|88m14 156r31
+63p4*Vehicle(45R9) 21|101m18 103m18 159r19 162r39 164r36 166r32
+64i4*Next{integer} 21|150r28 170r31 177r19
+X 23 system.ads
+67M9*Address
+X 32 s-memory.ads
+53V13*Alloc{23|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{23|67M9} 105i<c,__gnat_realloc>22
+X 40 s-stalib.adb
+89U14 Break_Start 90i<c,__gnat_break_start>22
+

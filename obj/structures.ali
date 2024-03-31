@@ -1,0 +1,201 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+
+U structures%s		structures.ads		7ad160f6 EE OO PF PK IL
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.enumeration_aux%s  a-tienau.adb	a-tienau.ali
+Z ada.text_io.enumeration_io%s
+Z system%s		system.ads		system.ali
+Z system.put_images%s	s-putima.adb		s-putima.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z system.val_enum_8%s	s-vaenu8.ads		s-vaenu8.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-tienau.ads		20210520051130 6a9c157b ada.text_io.enumeration_aux%s
+D a-tienio.ads		20210520051130 2e79c9bf ada.text_io.enumeration_io%s
+D a-tienio.adb		20210520051130 c9e6b5af ada.text_io.enumeration_io%b
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D structures.ads	20240331194438 d425b59b structures%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-stratt.ads		20210520051134 7bdda3fa system.stream_attributes%s
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-vaenu8.ads		20210520051134 b7b91426 system.val_enum_8%s
+D s-valuen.ads		20210520051134 72b74993 system.value_n%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s s [get structures__jobtypeio 31 14 10_4]
+G c Z s s [get structures__jobtypeio 34 14 10_4]
+G c Z s s [put structures__jobtypeio 40 14 10_4]
+G c Z s s [put structures__jobtypeio 52 14 10_4]
+G c Z s s [get structures__jobtypeio 62 14 10_4]
+G c Z s s [put structures__jobtypeio 69 14 10_4]
+G c Z s s [get structures__empnameio 31 14 19_4]
+G c Z s s [get structures__empnameio 34 14 19_4]
+G c Z s s [put structures__empnameio 40 14 19_4]
+G c Z s s [put structures__empnameio 52 14 19_4]
+G c Z s s [get structures__empnameio 62 14 19_4]
+G c Z s s [put structures__empnameio 69 14 19_4]
+G c Z s s [get structures__manufacturer_io 31 14 27_4]
+G c Z s s [get structures__manufacturer_io 34 14 27_4]
+G c Z s s [put structures__manufacturer_io 40 14 27_4]
+G c Z s s [put structures__manufacturer_io 52 14 27_4]
+G c Z s s [get structures__manufacturer_io 62 14 27_4]
+G c Z s s [put structures__manufacturer_io 69 14 27_4]
+G c Z s s [get structures__modelname_io 31 14 35_4]
+G c Z s s [get structures__modelname_io 34 14 35_4]
+G c Z s s [put structures__modelname_io 40 14 35_4]
+G c Z s s [put structures__modelname_io 52 14 35_4]
+G c Z s s [get structures__modelname_io 62 14 35_4]
+G c Z s s [put structures__modelname_io 69 14 35_4]
+G c Z s s [get structures__color_io 31 14 42_4]
+G c Z s s [get structures__color_io 34 14 42_4]
+G c Z s s [put structures__color_io 40 14 42_4]
+G c Z s s [put structures__color_io 52 14 42_4]
+G c Z s s [get structures__color_io 62 14 42_4]
+G c Z s s [put structures__color_io 69 14 42_4]
+G c Z s s [vehicle_typeDA structures 45 9 none]
+G c Z s s [vehicle_typeDF structures 45 9 none]
+G c Z s s [vehicle_typeIP structures 45 9 none]
+G c Z s s [carDA structures 51 9 none]
+G c Z s s [carDF structures 51 9 none]
+G c Z s s [carIP structures 51 9 none]
+G c Z s s [planeDA structures 55 9 none]
+G c Z s s [planeDF structures 55 9 none]
+G c Z s s [planeIP structures 55 9 none]
+G c Z s s [empIP structures 59 6 none]
+X 1 ada.ads
+16K9*Ada 20e8 16|1r6 1r23 10r29 19r29 27r35 35r32 42r28
+X 9 a-textio.ads
+58K13*Text_IO 725e16 16|1w10 1r27 10r33 19r33 27r39 35r36 42r32
+X 11 a-tienio.ads
+26k21*Enumeration_IO 76e31 16|10r41 19r41 27r47 35r44 42r40
+X 16 structures.ads
+3K9*structures 70l5 70e15
+5E9*JobType 8e5 10r56 61r9
+6n7*Programmer{5E9}
+6n19*Manager{5E9}
+6n28*Accountant{5E9}
+6n40*Analysist{5E9}
+7n7*Sales{5E9}
+7n14*Manufacturing{5E9}
+7n29*Inventory{5E9}
+7n40*SoftwareEngineer{5E9}
+10K12*JobTypeIO[11|26] 11r8
+13E9*EmpName 17e5 19r56 60r10
+14n7*David{13E9}
+14n14*Kevin{13E9}
+14n21*Sam{13E9}
+14n26*Mary{13E9}
+14n32*Bob{13E9}
+14n37*Marty{13E9}
+14n44*Sable{13E9}
+14n51*Betty{13E9}
+15n7*Tom{13E9}
+15n12*Teddy{13E9}
+15n19*Jerry{13E9}
+15n26*Ben{13E9}
+15n31*Sara{13E9}
+15n37*Donald{13E9}
+15n45*Damon{13E9}
+15n52*Darlene{13E9}
+16n7*Dustin{13E9}
+16n15*Desire{13E9}
+19K12*EmpNameIO[11|26] 20r8
+22E11*Manufacturer 25e5 27r62 46r13
+23n7*Ford{22E11}
+23n13*GMC{22E11}
+23n18*Dodge{22E11}
+23n25*Chevrolet{22E11}
+24n7*GeneralDynamics{22E11}
+24n24*Grumman{22E11}
+24n33*Lockheed{22E11}
+24n43*Boeing{22E11}
+27K12*Manufacturer_IO[11|26] 28r8
+30E9*ModelName 33e5 35r59 47r14
+31n7*Expedition{30E9}
+31n19*Raptor{30E9}
+31n27*Pickup{30E9}
+31n35*Devil{30E9}
+31n42*Camaro{30E9}
+31n50*StingRay{30E9}
+31n60*Charger{30E9}
+31n69*Ram{30E9}
+32n7*F_16{30E9}
+32n13*Commercial{30E9}
+32n25*F35{30E9}
+32n30*B747{30E9}
+35K12*ModelName_IO[11|26] 36r8
+38E9*Color 40e5 42r55 48r17
+39n7*Blue{38E9}
+39n13*Red{38E9}
+39n18*White{38E9}
+39n25*Orange{38E9}
+39n33*Black{38E9}
+39n40*Silver{38E9}
+39n48*Camo{38E9}
+42K12*Color_IO[11|26] 43r8
+45H9*vehicle_type 49e14 51r20 55r22 63r20
+46e7*Manu{22E11}
+47e7*Model{30E9}
+48e7*VehColor{38E9}
+51R9*Car<45R9> 53e14
+52i7*Doors{integer}
+55R9*Plane<45R9> 57e14
+56i7*NumEngines{integer}
+59R6*Emp 66e11
+60e4*Name{13E9}
+61e4*Job{5E9}
+62i4*Age{integer}
+63p4*Vehicle(45R9)
+64i4*Next{integer}
+65i4*Prev{integer}
+

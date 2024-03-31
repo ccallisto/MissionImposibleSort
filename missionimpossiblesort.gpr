@@ -1,0 +1,5 @@
+project Missionimpossiblesort is
+    for Source_Dirs use ("src");
+    for Object_Dir use "obj";
+    for Main use ("linksort.adb");
+end Missionimpossiblesort;
