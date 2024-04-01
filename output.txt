@@ -1,1 +1,16 @@
+Enter Employee Name: Enter Job Type: Enter Age: Enter Manufacturer: 
+Job Type = PROGRAMMER
 
+Job Type = MANAGER
+
+Job Type = ACCOUNTANT
+
+Job Type = ANALYSIST
+
+Job Type = SALES
+
+Job Type = MANUFACTURING
+
+Job Type = INVENTORY
+
+Job Type = SOFTWAREENGINEER

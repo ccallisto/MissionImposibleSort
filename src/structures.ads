@@ -55,22 +55,24 @@ package structures is
    type Plane is new vehicle_type with record
       NumEngines: Integer;
    end record;
+   
    type Vehicle_Node;
    type Vehicle_Ptr is access Vehicle_Node;
+   
    type Vehicle_Node is record
    Data : access vehicle_type'Class;
    Next : Vehicle_Ptr := null;
    end record;
-   
+
+type Emp;
+type Emp_Ptr is access all Emp;
 type Emp is record
    Name: EmpName;
    Job: JobType;
    Age: Integer;
-   Vehicle: access vehicle_type'Class; 
+   VehiclesHead: Vehicle_Ptr := null;
    Next: Integer;
    Prev: Integer;
-end record;
-
- 
-
+end record; 
+procedure Add_Vehicle(Employee : in out Emp; Manu : Manufacturer; Model : ModelName; VehColor : Color; Is_Plane : Boolean; NumDoorsOrEngines : Integer);
 end structures; 

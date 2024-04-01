@@ -1,101 +1,33 @@
 <?xml version="1.0"?>
 <Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 7" line=" 111" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 112" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 65" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/src/structures.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 4" line=" 3" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/src/structures.adb</vfs_file>
+    </file_marker>
+  </Project>
   <Project >
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
+    <vfs_file >/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/missionimpossiblesort.gpr</vfs_file>
+    <file_marker column=" 51" line=" 111">
+      <vfs_project >/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file >/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/src/linksort.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\doublylinkedlist.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\doublylinkedlist.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\structures.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\structures.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 44" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\structures.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 44" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\structures.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 13" line=" 69" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\structures.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project>D:\MissionImpossible\missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>D:\MissionImpossible\src\linksort.adb</vfs_file>
+    <file_marker current="true" column=" 9" line=" 112">
+      <vfs_project >/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file >/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/src/linksort.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>

@@ -17,7 +17,7 @@ procedure LinkSort is
     SortByJob: Array(JobType) of Integer := (others => 0);
    --funcions for inserting into list; weird solution but works
     function Get_JobType return JobType is
-    gJob : JobType;
+      gJob : JobType;
 begin
     Put("Enter Job Type: ");
     JobTypeIO.Get(gJob);
@@ -76,9 +76,12 @@ function MakeEmp return Emp is
     Employee : Emp;
     TempManu : Manufacturer;
     TempModel : ModelName;
+    TempVehColor : Color;
     TempDoors : Integer;
     TempNumEngines : Integer;
-    TempVehColor : Color;
+     New_Vehicle : access vehicle_type'Class := null;
+     is_plane : boolean;
+
 begin
     Employee.Name := Get_Name;
     Employee.Job := Get_JobType;
@@ -86,38 +89,35 @@ begin
 
     TempManu := Get_Manu;
     TempModel := Get_Model;
-    TempDoors := GetVehInt;
     TempVehColor := Get_Color;
-
-
+    TempDoors := GetVehInt;
 
     if TempManu = GeneralDynamics or TempManu = Grumman or TempManu = Lockheed or TempManu = Boeing then
+         TempNumEngines := TempDoors;
+         is_plane := true;
+         Structures.Add_Vehicle(Employee, TempManu, TempModel, TempVehColor,Is_Plane, TempNumEngines );
+      else
+        is_plane := False;
+         Structures.Add_Vehicle(Employee, TempManu, TempModel, TempVehColor,Is_Plane, TempDoors );
 
-        TempNumEngines := TempDoors;
-        Employee.Vehicle := new Plane'(Manu => TempManu, Model => TempModel, VehColor => TempVehColor, NumEngines => TempNumEngines);
-    else
-        Employee.Vehicle := new Car'(Manu => TempManu, Model => TempModel, VehColor => TempVehColor, Doors => TempDoors);
     end if;
+
+
 
     return Employee;
 end MakeEmp;
 
 
 
+
 begin
     Emp_List.Init(Emps, Avail);
 
-    loop
-        begin
-            Emp_List.Insert(Emps, Avail, MakeEmp);
-            -- Removed the prompt and LegalIO.Get(Again) for continuation check
-        exception
-            when Data_Error =>
-                exit; -- Exits the loop on EOF or invalid data error
-            when others =>
-                Put_Line("An unexpected error occurred.");
-                exit;
-        end;
+   while Again in PositiveResponse loop
+
+      Emp_List.Insert(Emps, Avail, MakeEmp);
+      put("Enter another name (yup or nope): ");
+      get(Again);
     end loop;
 
    for J in JobType loop
@@ -146,26 +146,31 @@ begin
    Put(Integer'Image(Emps(Pt).Age));
    Put(" ");
    Put(JobType'Image(Emps(Pt).Job));
-      if Emps(Pt).Vehicle /= null then
       Put(" , ");
-      Put(Manufacturer'Image(Emps(Pt).Vehicle.Manu));
+
+     declare
+    Current_Vehicle : Vehicle_Ptr := Emps(Pt).VehiclesHead;
+         begin
+      Put(Manufacturer'Image(Current_Vehicle.Data.Manu)); --access issue here
       Put("  ");
-      Put(ModelName'Image(Emps(Pt).Vehicle.Model));
+      Put(ModelName'Image(Current_Vehicle.Data.Model));
       Put("  ");
-      Put(Color'Image(Emps(Pt).Vehicle.VehColor));
+      Put(Color'Image(Current_Vehicle.Data.VehColor));
       Put("  ");
-      if Emps(Pt).Vehicle.all in Car then
-         Put(" Doors: ");
-         Put(Integer'Image(Car(Emps(Pt).Vehicle.all).Doors));
-      elsif Emps(Pt).Vehicle.all in Plane then
-         Put(" Engines: ");
-         Put(Integer'Image(Plane(Emps(Pt).Vehicle.all).NumEngines));
-      end if;
-   end if;
+    while Current_Vehicle /= null loop
+        if Current_Vehicle.Data.all in Car then
+            Put(" Doors: ");
+            Put(Integer'Image(Car(Current_Vehicle.Data.all).Doors));
+        elsif Current_Vehicle.Data.all in Plane then
+            Put(" Engines: ");
+            Put(Integer'Image(Plane(Current_Vehicle.Data.all).NumEngines));
+        end if;
+        Current_Vehicle := Current_Vehicle.Next;
+    end loop;
+end;
    Put(" link = ");
    Put(Integer'Image(Emps(Pt).Next));
    New_Line;
-
 
 
    New_Line;

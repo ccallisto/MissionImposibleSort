@@ -1,21 +1,20 @@
 [GENERATED OBJECT FILE]
 b__linksort.o
 [PROJECT FILES]
-D:\MissionImpossible\missionimpossiblesort.gpr
-20240331183022 b302bc982a44c24d698988e2a95aa222
+/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/missionimpossiblesort.gpr
+20240331231024 cb157be38a0b35f9c4c5ca06312a2d6a
 [BOUND OBJECT FILES]
-D:\MissionImpossible\obj\structures.o
-D:\MissionImpossible\obj\doublylinkedlist.o
-D:\MissionImpossible\obj\linksort.o
+/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/obj/structures.o
+/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/obj/doublylinkedlist.o
+/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/obj/linksort.o
 [GENERATED SOURCE FILES]
 b__linksort.ads
 b__linksort.adb
 b__linksort.ali
 [RESULTING OPTIONS]
--LD:\MissionImpossible\obj\
--LD:\MissionImpossible\obj\
--LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-L/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/obj/
+-L/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/obj/
+-L/usr/lib/gcc/x86_64-redhat-linux/13/adalib/
 -static
--static-libgcc
-C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
--Wl,--stack=0x2000000
+-lgnat
+-ldl
