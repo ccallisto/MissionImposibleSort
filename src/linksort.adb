@@ -15,8 +15,7 @@ procedure LinkSort is
     Again: LegalResponse := affirmative;
     Pt: Integer;
     SortByJob: Array(JobType) of Integer := (others => 0);
-   --funcions for inserting into list; weird solution but works
-    function Get_JobType return JobType is
+function Get_JobType return JobType is
       gJob : JobType;
 begin
     Put("Enter Job Type: ");
@@ -145,29 +144,29 @@ begin
         Current_Vehicle : Vehicle_Ptr := Emps(Pt).Vehicles(Index);
     begin
         if Current_Vehicle /= null then
-            -- Now safe to access members of Current_Vehicle
-            Put(Manufacturer'Image(Current_Vehicle.all.Manu)); -- Note the use of .all
+            Put(Manufacturer'Image(Current_Vehicle.all.Manu));
             Put("  ");
             Put(ModelName'Image(Current_Vehicle.all.Model));
             Put("  ");
             Put(Color'Image(Current_Vehicle.all.VehColor));
             Put("  ");
 
-            -- Determine vehicle type and print specific info
             if Current_Vehicle.all in Car then
                 Put(" Doors: ");
                 Put(Integer'Image(Car(Current_Vehicle.all).Doors));
+                Put(";");
             elsif Current_Vehicle.all in Plane then
                 Put(" Engines: ");
                 Put(Integer'Image(Plane(Current_Vehicle.all).NumEngines));
-            end if;
-            -- Logic for printing "; " between vehicles remains unchanged
+                Put(";");
+             end if;
+
         end if;
     end;
 end loop;
 
 
-    Put_Line(""); -- Finish the line for the current employee
+    Put_Line("");
     Pt := Emps(Pt).Next; -- Proceed to the next employee
 end loop;
 

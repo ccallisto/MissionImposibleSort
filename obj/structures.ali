@@ -65,7 +65,7 @@ D a-unccon.ads		20240316000000 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20240316000000 15f799c2 interfaces%s
 D i-cstrea.ads		20240316000000 e53d8b8e interfaces.c_streams%s
 D structures.ads	20240401160140 299d5625 structures%s
-D structures.adb	20240401160330 9f716503 structures%b
+D structures.adb	20240401160423 9f716503 structures%b
 D system.ads		20240316000000 426dafb8 system%s
 D s-crtl.ads		20240316000000 8a0692f8 system.crtl%s
 D s-exctab.ads		20240316000000 91bef6ef system.exception_table%s
@@ -136,14 +136,14 @@ G c Z s s [planeIP structures 55 9 none]
 G c Z s s [Tvehicle_arrayBIP structures 60 1 none]
 G c Z s s [empIP structures 65 6 none]
 X 1 ada.ads
-16K9*Ada 20e8 17|1r6 1r23 10r29 19r29 27r35 35r32 42r28 18|18r13
+16K9*Ada 20e8 17|1r6 1r23 10r29 19r29 27r35 35r32 42r28 18|15r13
 X 10 a-textio.ads
-58K13*Text_IO 787e16 17|1w10 1r27 10r33 19r33 27r39 35r36 42r32 18|18r17
-566U14*Put_Line 18|18s25
+58K13*Text_IO 787e16 17|1w10 1r27 10r33 19r33 27r39 35r36 42r32 18|15r17
+566U14*Put_Line 18|15s25
 X 12 a-tienio.ads
 26k21*Enumeration_IO 82e31 17|10r41 19r41 27r47 35r44 42r40
 X 17 structures.ads
-3K9*structures 75l5 75e15 18|1b14 22l5 22t15
+3K9*structures 75l5 75e15 18|1b14 19l5 19t15
 5E9*JobType 8e5 10r56 67r9
 6n7*Programmer{5E9}
 6n19*Manager{5E9}
@@ -208,13 +208,13 @@ X 17 structures.ads
 39n48*Camo{38E9}
 42K12*Color_IO[12|26] 43r8
 45H9*vehicle_type 49e14 51r20 55r22 59r32
-46e7*Manu{22E11} 18|9m43 11m41
-47e7*Model{30E9} 18|9m57 11m55
-48e7*VehColor{38E9} 18|9m73 11m71
-51R9*Car<45R9> 53e14 18|11r36
-52i7*Doors{integer} 18|11m93
-55R9*Plane<45R9> 57e14 18|9r36
-56i7*NumEngines{integer} 18|9m95
+46e7*Manu{22E11} 18|8m43 10m41
+47e7*Model{30E9} 18|8m57 10m55
+48e7*VehColor{38E9} 18|8m73 10m71
+51R9*Car<45R9> 53e14 18|10r36
+52i7*Doors{integer} 18|10m93
+55R9*Plane<45R9> 57e14 18|8r36
+56i7*NumEngines{integer} 18|8m95
 59P6*Vehicle_Ptr(45R9) 60r50 18|4r23
 60A6*Vehicle_Array(59P6)<integer> 69r14
 63R6*Emp 64r28 65c6 73e11 74r41 18|3r45
@@ -223,19 +223,19 @@ X 17 structures.ads
 66e4*Name{13E9}
 67e4*Job{5E9}
 68i4*Age{integer}
-69a4*Vehicles{60A6} 18|6r46 16m22
-70i4*Vehicle_Count{integer} 18|6r21 15m22 15r48 16r40
+69a4*Vehicles{60A6} 18|6r46 13m22
+70i4*Vehicle_Count{integer} 18|6r21 12m22 12r48 13r40
 71i4*Prev{integer}
 72i4*Next{integer}
-74U11*Add_Vehicle 74=23 74>46 74>67 74>86 74>104 74>124 18|3b15 20l9 20t20
-74r23 Employee{65R6} 18|3b27 6r12 6r37 15m13 15r39 16m13 16r31
-74e46 Manu{22E11} 18|3b50 9r51 11r49
-74e67 Model{30E9} 18|3b71 9r66 11r64
-74e86 VehColor{38E9} 18|3b90 9r85 11r83
-74b104 Is_Plane{boolean} 18|3b108 8r16
-74i124 NumDoorsOrEngines{integer} 18|3b128 9r109 11r102
+74U11*Add_Vehicle 74=23 74>46 74>67 74>86 74>104 74>124 18|3b15 17l9 17t20
+74r23 Employee{65R6} 18|3b27 6r12 6r37 12m13 12r39 13m13 13r31
+74e46 Manu{22E11} 18|3b50 8r51 10r49
+74e67 Model{30E9} 18|3b71 8r66 10r64
+74e86 VehColor{38E9} 18|3b90 8r85 10r83
+74b104 Is_Plane{boolean} 18|3b108 7r16
+74i124 NumDoorsOrEngines{integer} 18|3b128 8r109 10r102
 X 18 structures.adb
-4p9 New_Vehicle{17|59P6} 9m17 11m17 16r58
+4p9 New_Vehicle{17|59P6} 8m17 10m17 13r58
 X 19 system.ads
 67M9*Address
 X 25 s-memory.ads
