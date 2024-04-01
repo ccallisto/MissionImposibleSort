@@ -79,9 +79,7 @@ function MakeEmp return Emp is
     TempVehColor : Color;
     TempDoors : Integer;
     TempNumEngines : Integer;
-     New_Vehicle : access vehicle_type'Class := null;
-     is_plane : boolean;
-
+    Is_Plane : Boolean;
 begin
     Employee.Name := Get_Name;
     Employee.Job := Get_JobType;
@@ -92,21 +90,15 @@ begin
     TempVehColor := Get_Color;
     TempDoors := GetVehInt;
 
-    if TempManu = GeneralDynamics or TempManu = Grumman or TempManu = Lockheed or TempManu = Boeing then
-         TempNumEngines := TempDoors;
-         is_plane := true;
-         Structures.Add_Vehicle(Employee, TempManu, TempModel, TempVehColor,Is_Plane, TempNumEngines );
-      else
-        is_plane := False;
-         Structures.Add_Vehicle(Employee, TempManu, TempModel, TempVehColor,Is_Plane, TempDoors );
-
+    Is_Plane := (TempManu = GeneralDynamics or TempManu = Grumman or TempManu = Lockheed or TempManu = Boeing);
+    if Is_Plane then
+        TempNumEngines := TempDoors;
     end if;
 
-
+    Add_Vehicle(Employee, TempManu, TempModel, TempVehColor, Is_Plane, TempDoors);
 
     return Employee;
 end MakeEmp;
-
 
 
 
@@ -140,41 +132,44 @@ begin
             Pt := Emps(Pt).Next;
         end if;
 
-      while Pt /= 0 loop
-   Put(EmpName'Image(Emps(Pt).Name));
-   Put(" ");
-   Put(Integer'Image(Emps(Pt).Age));
-   Put(" ");
-   Put(JobType'Image(Emps(Pt).Job));
-      Put(" , ");
+    while Pt /= 0 loop
+    Put(EmpName'Image(Emps(Pt).Name));
+    Put(" ");
+    Put(Integer'Image(Emps(Pt).Age));
+    Put(" ");
+    Put(JobType'Image(Emps(Pt).Job));
+    Put(" , ");
 
-     declare
-    Current_Vehicle : Vehicle_Ptr := Emps(Pt).VehiclesHead;
-         begin
-      Put(Manufacturer'Image(Current_Vehicle.Data.Manu)); --access issue here
-      Put("  ");
-      Put(ModelName'Image(Current_Vehicle.Data.Model));
-      Put("  ");
-      Put(Color'Image(Current_Vehicle.Data.VehColor));
-      Put("  ");
-    while Current_Vehicle /= null loop
-        if Current_Vehicle.Data.all in Car then
-            Put(" Doors: ");
-            Put(Integer'Image(Car(Current_Vehicle.Data.all).Doors));
-        elsif Current_Vehicle.Data.all in Plane then
-            Put(" Engines: ");
-            Put(Integer'Image(Plane(Current_Vehicle.Data.all).NumEngines));
+    for Index in 1 .. Emps(Pt).Vehicle_Count loop
+    declare
+        Current_Vehicle : Vehicle_Ptr := Emps(Pt).Vehicles(Index);
+    begin
+        if Current_Vehicle /= null then
+            -- Now safe to access members of Current_Vehicle
+            Put(Manufacturer'Image(Current_Vehicle.all.Manu)); -- Note the use of .all
+            Put("  ");
+            Put(ModelName'Image(Current_Vehicle.all.Model));
+            Put("  ");
+            Put(Color'Image(Current_Vehicle.all.VehColor));
+            Put("  ");
+
+            -- Determine vehicle type and print specific info
+            if Current_Vehicle.all in Car then
+                Put(" Doors: ");
+                Put(Integer'Image(Car(Current_Vehicle.all).Doors));
+            elsif Current_Vehicle.all in Plane then
+                Put(" Engines: ");
+                Put(Integer'Image(Plane(Current_Vehicle.all).NumEngines));
+            end if;
+            -- Logic for printing "; " between vehicles remains unchanged
         end if;
-        Current_Vehicle := Current_Vehicle.Next;
-    end loop;
-end;
-   Put(" link = ");
-   Put(Integer'Image(Emps(Pt).Next));
-   New_Line;
+    end;
+end loop;
 
 
-   New_Line;
-   Pt := Emps(Pt).Next;
-      end loop;
-      end loop;
+    Put_Line(""); -- Finish the line for the current employee
+    Pt := Emps(Pt).Next; -- Proceed to the next employee
+end loop;
+
+ end loop;
 end LinkSort;

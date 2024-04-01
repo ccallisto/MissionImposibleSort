@@ -33,11 +33,11 @@ package body ada_main is
    E133 : Short_Integer; pragma Import (Ada, E133, "system__finalization_root_E");
    E131 : Short_Integer; pragma Import (Ada, E131, "ada__finalization_E");
    E130 : Short_Integer; pragma Import (Ada, E130, "system__file_io_E");
-   E158 : Short_Integer; pragma Import (Ada, E158, "system__storage_pools_E");
-   E156 : Short_Integer; pragma Import (Ada, E156, "system__finalization_masters_E");
-   E164 : Short_Integer; pragma Import (Ada, E164, "system__storage_pools__subpools_E");
+   E156 : Short_Integer; pragma Import (Ada, E156, "system__storage_pools_E");
+   E160 : Short_Integer; pragma Import (Ada, E160, "system__finalization_masters_E");
+   E158 : Short_Integer; pragma Import (Ada, E158, "system__storage_pools__subpools_E");
    E104 : Short_Integer; pragma Import (Ada, E104, "ada__text_io_E");
-   E160 : Short_Integer; pragma Import (Ada, E160, "system__pool_global_E");
+   E164 : Short_Integer; pragma Import (Ada, E164, "system__pool_global_E");
    E142 : Short_Integer; pragma Import (Ada, E142, "system__img_llli_E");
    E139 : Short_Integer; pragma Import (Ada, E139, "system__img_lli_E");
    E154 : Short_Integer; pragma Import (Ada, E154, "structures_E");
@@ -52,53 +52,47 @@ package body ada_main is
 
    procedure finalize_library is
    begin
+      E154 := E154 - 1;
       declare
          procedure F1;
-         pragma Import (Ada, F1, "structures__finalize_body");
+         pragma Import (Ada, F1, "structures__finalize_spec");
       begin
-         E154 := E154 - 1;
          F1;
-      end;
-      declare
-         procedure F2;
-         pragma Import (Ada, F2, "structures__finalize_spec");
-      begin
-         F2;
-      end;
-      E160 := E160 - 1;
-      declare
-         procedure F3;
-         pragma Import (Ada, F3, "system__pool_global__finalize_spec");
-      begin
-         F3;
-      end;
-      E104 := E104 - 1;
-      declare
-         procedure F4;
-         pragma Import (Ada, F4, "ada__text_io__finalize_spec");
-      begin
-         F4;
       end;
       E164 := E164 - 1;
       declare
+         procedure F2;
+         pragma Import (Ada, F2, "system__pool_global__finalize_spec");
+      begin
+         F2;
+      end;
+      E104 := E104 - 1;
+      declare
+         procedure F3;
+         pragma Import (Ada, F3, "ada__text_io__finalize_spec");
+      begin
+         F3;
+      end;
+      E158 := E158 - 1;
+      declare
+         procedure F4;
+         pragma Import (Ada, F4, "system__storage_pools__subpools__finalize_spec");
+      begin
+         F4;
+      end;
+      E160 := E160 - 1;
+      declare
          procedure F5;
-         pragma Import (Ada, F5, "system__storage_pools__subpools__finalize_spec");
+         pragma Import (Ada, F5, "system__finalization_masters__finalize_spec");
       begin
          F5;
       end;
-      E156 := E156 - 1;
       declare
          procedure F6;
-         pragma Import (Ada, F6, "system__finalization_masters__finalize_spec");
-      begin
-         F6;
-      end;
-      declare
-         procedure F7;
-         pragma Import (Ada, F7, "system__file_io__finalize_body");
+         pragma Import (Ada, F6, "system__file_io__finalize_body");
       begin
          E130 := E130 - 1;
-         F7;
+         F6;
       end;
       declare
          procedure Reraise_Library_Exception_If_Any;
@@ -255,23 +249,22 @@ package body ada_main is
       System.File_Io'Elab_Body;
       E130 := E130 + 1;
       System.Storage_Pools'Elab_Spec;
-      E158 := E158 + 1;
+      E156 := E156 + 1;
       System.Finalization_Masters'Elab_Spec;
       System.Finalization_Masters'Elab_Body;
-      E156 := E156 + 1;
+      E160 := E160 + 1;
       System.Storage_Pools.Subpools'Elab_Spec;
-      E164 := E164 + 1;
+      E158 := E158 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E104 := E104 + 1;
       System.Pool_Global'Elab_Spec;
-      E160 := E160 + 1;
+      E164 := E164 + 1;
       System.Img_Llli'Elab_Spec;
       E142 := E142 + 1;
       System.Img_Lli'Elab_Spec;
       E139 := E139 + 1;
       structures'elab_spec;
-      structures'elab_body;
       E154 := E154 + 1;
       E152 := E152 + 1;
    end adainit;
@@ -311,11 +304,11 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/obj/structures.o
-   --   /home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/obj/doublylinkedlist.o
-   --   /home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/obj/linksort.o
-   --   -L/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/obj/
-   --   -L/home/callisto/Desktop/DSA/Lab2/MissionImpossibleSort/obj/
+   --   /home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/structures.o
+   --   /home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/doublylinkedlist.o
+   --   /home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/linksort.o
+   --   -L/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/
+   --   -L/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/
    --   -L/usr/lib/gcc/x86_64-redhat-linux/13/adalib/
    --   -static
    --   -lgnat

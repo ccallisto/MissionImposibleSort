@@ -1,7 +1,7 @@
 with Ada.Text_IO; use ada.Text_IO;
 
 package structures is
-
+   
    type JobType is (
       Programmer, Manager, Accountant, Analysist,
       Sales, Manufacturing, Inventory, SoftwareEngineer
@@ -56,13 +56,9 @@ package structures is
       NumEngines: Integer;
    end record;
    
-   type Vehicle_Node;
-   type Vehicle_Ptr is access Vehicle_Node;
-   
-   type Vehicle_Node is record
-   Data : access vehicle_type'Class;
-   Next : Vehicle_Ptr := null;
-   end record;
+type Vehicle_Ptr is access all vehicle_type'Class;
+type Vehicle_Array is array (1 .. 10) of aliased Vehicle_Ptr;
+
 
 type Emp;
 type Emp_Ptr is access all Emp;
@@ -70,9 +66,10 @@ type Emp is record
    Name: EmpName;
    Job: JobType;
    Age: Integer;
-   VehiclesHead: Vehicle_Ptr := null;
-   Next: Integer;
+   Vehicles: Vehicle_Array := (others => null);
+   Vehicle_Count: Integer := 0;
    Prev: Integer;
+   Next: integer;
 end record; 
 procedure Add_Vehicle(Employee : in out Emp; Manu : Manufacturer; Model : ModelName; VehColor : Color; Is_Plane : Boolean; NumDoorsOrEngines : Integer);
 end structures; 
