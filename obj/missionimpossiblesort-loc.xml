@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file />
+  <Project >
     <file_marker column=" 1" line=" 1" >
       <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
       <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/doublylinkedlist.adb</vfs_file>
@@ -18,32 +17,173 @@
       <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
       <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/structures.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 175" >
-      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
-      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 4" line=" 3" >
+    <file_marker column=" 4" line=" 6" >
       <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
       <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
     </file_marker>
-  </Project>
-  <Project >
-    <vfs_file >/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_file>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
-      <vfs_file >/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/doublylinkedlist.adb</vfs_file>
+    <file_marker column=" 4" line=" 4" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.ads</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
-      <vfs_file >/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/doublylinkedlist.ads</vfs_file>
+    <file_marker column=" 1" line=" 62" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 1">
-      <vfs_project >/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
-      <vfs_file >/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    <file_marker column=" 5" line=" 9" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 1" line=" 1">
-      <vfs_project >/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
-      <vfs_file >/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/structures.ads</vfs_file>
+    <file_marker column=" 17" line=" 2" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 42" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 42" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 16" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 1" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 1" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 18" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/makeemp.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 33" line=" 4" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 127" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/structures.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/structures.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 7" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 21" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 21" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 50" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 10" line=" 34" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 21" line=" 49" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 11" line=" 34" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/linksort.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 8" line=" 32" >
+      <vfs_project>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/missionimpossiblesort.gpr</vfs_project>
+      <vfs_file>/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/src/structures.ads</vfs_file>
     </file_marker>
   </Project>
   <Project >

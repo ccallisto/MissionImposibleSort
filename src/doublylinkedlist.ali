@@ -5,18 +5,19 @@ RN
 RV NO_IO
 RV NO_DYNAMIC_SIZED_OBJECTS
 
-U doublylinkedlist%b	doublylinkedlist.adb	47cca3ee NE OO PK GE
+U doublylinkedlist%b	doublylinkedlist.adb	514e3243 NE OO PK GE
 W ada%s			ada.ads			ada.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-W structures%s		structures.ads		structures.ali
+W structures%s		structures.adb		structures.ali
 
-U doublylinkedlist%s	doublylinkedlist.ads	ec4d3b75 BN EE NE OO PK GE
+U doublylinkedlist%s	doublylinkedlist.ads	facfaad8 BN EE NE OO PK GE
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
-W structures%s		structures.ads		structures.ali
+W structures%s		structures.adb		structures.ali
 
 D ada.ads		20240316000000 76789da1 ada%s
 D a-except.ads		20240316000000 2a7d8d70 ada.exceptions%s
+D a-finali.ads		20240316000000 bf4f806b ada.finalization%s
 D a-ioexce.ads		20240316000000 40018c65 ada.io_exceptions%s
 D a-stream.ads		20240316000000 119b8fb3 ada.streams%s
 D a-string.ads		20240316000000 90ac6797 ada.strings%s
@@ -30,12 +31,15 @@ D doublylinkedlist.ads	20240401152414 a205c9bd doublylinkedlist%s
 D doublylinkedlist.adb	20240401152414 f7adf9c8 doublylinkedlist%b
 D interfac.ads		20240316000000 15f799c2 interfaces%s
 D i-cstrea.ads		20240316000000 e53d8b8e interfaces.c_streams%s
-D structures.ads	20240401152414 4e48f2c8 structures%s
+D structures.ads	20240401192805 58ca6365 structures%s
 D system.ads		20240316000000 426dafb8 system%s
 D s-crtl.ads		20240316000000 8a0692f8 system.crtl%s
 D s-exctab.ads		20240316000000 91bef6ef system.exception_table%s
 D s-ficobl.ads		20240316000000 dc5161d4 system.file_control_block%s
+D s-finmas.ads		20240316000000 bd688734 system.finalization_masters%s
+D s-finroo.ads		20240316000000 4ff27390 system.finalization_root%s
 D s-parame.ads		20240316000000 d494a4a6 system.parameters%s
+D s-pooglo.ads		20240316000000 91708d21 system.pool_global%s
 D s-putima.ads		20240316000000 17291fe4 system.put_images%s
 D s-retsta.ads		20240316000000 0f6b06cb system.return_stack%s
 D s-secsta.ads		20240316000000 578279f5 system.secondary_stack%s
@@ -44,6 +48,7 @@ D s-stache.ads		20240316000000 0b81c1fe system.stack_checking%s
 D s-stalib.ads		20240316000000 1c9580f6 system.standard_library%s
 D s-stoele.ads		20240316000000 ab5468e4 system.storage_elements%s
 D s-stoele.adb		20240316000000 8f5a9db6 system.storage_elements%b
+D s-stopoo.ads		20240316000000 e9fa2dd8 system.storage_pools%s
 D s-stratt.ads		20240316000000 f7dfd786 system.stream_attributes%s
 D s-traent.ads		20240316000000 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20240316000000 fa2a7f59 system.unsigned_types%s
@@ -51,40 +56,39 @@ D s-wchcon.ads		20240316000000 d9032363 system.wch_con%s
 G a e
 G c Z s b [doublylinkedlist standard 6 9 none]
 X 1 ada.ads
-16K9*Ada 20e8 13|2r6 2r23
-X 9 a-textio.ads
-58K13*Text_IO 787e16 13|2w10 2r27
-566U14*Put_Line 13|57s10
-X 12 doublylinkedlist.ads
+16K9*Ada 20e8 14|2r6 2r23
+X 10 a-textio.ads
+58K13*Text_IO 787e16 14|2w10 2r27
+566U14*Put_Line 14|57s10
+X 13 doublylinkedlist.ads
 3+12 node
 4i7 MaxItems{integer}
-6k9*DoublyLinkedList 3z12 4z7 14l5 14e21 13|3b14 61l5 61t21
-8A12*listArr(16|69R6)<integer> 10r36 11r38 13|5r33 16r35
-10U17*Init 10=22 10=45 13|5b14 14l8 14t12
-10a22 list{8A12} 13|5b19 9m10 10m10 11m10
-10i45 avail{integer} 13|5b42 7m7 9r15 10r15 11r15 12m10 12r19
-11U17*Insert 11=24 11=47 11>71 13|16b14 59l8 59t14
-11a24 list{8A12} 13|16b21 19r19 20m10 24r21 27r8 29r20 30r11 30r52 33r20
+6k9*DoublyLinkedList 3z12 4z7 14l5 14e21 14|3b14 61l5 61t21
+8A12*listArr(17|62R6)<integer> 10r36 11r38 14|5r33 16r35
+10U17*Init 10=22 10=45 14|5b14 14l8 14t12
+10a22 list{8A12} 14|5b19 9m10 10m10 11m10
+10i45 avail{integer} 14|5b42 7m7 9r15 10r15 11r15 12m10 12r19
+11U17*Insert 11=24 11=47 11>71 14|16b14 59l8 59t14
+11a24 list{8A12} 14|16b21 19r19 20m10 24r21 27r8 29r20 30r11 30r52 33r20
 . 40m13 40r33 41m13 42r16 43m16 43r21 45m13 47m13 47r33 48m13 49m13 50r16
 . 51m16 51r21
-11i47 avail{integer} 13|16b44 19r10 20r15 40r18 41r18 43r46 45r32 47r18 48r18
+11i47 avail{integer} 14|16b44 19r10 20r15 40r18 41r18 43r46 45r32 47r18 48r18
 . 49r36 50r21 51r26 51r47 55m10 55r19
-11r71 newItem{16|69R6} 13|16b67 20r25 22r30 27r28 30r31 30r73
-X 13 doublylinkedlist.adb
-8e11 J{16|5E9} 9r29
+11r71 newItem{17|62R6} 14|16b67 20r25 22r30 27r28 30r31 30r73
+X 14 doublylinkedlist.adb
+8e11 J{17|5E9} 9r29
 17i7 current{integer} 24m10 26r7 27r13 28r21 29m9 29r25 30r16 30r57 32r21
 . 33m9 33r25
 17i16 previous{integer} 28m9 32m9 39r13 47r38 48r33 49r18
 17i26 head{integer} 22m10 24r26 40r38 41r33 42r21 43r26 45r18
-X 16 structures.ads
-3K9*structures 12|1w6 1r22 13|1w6 1r22 16|78e15
-5E9*JobType 13|8r16 22r18 16|8e5
-67R6*Emp 12|8r50 11r83 13|16r79 16|76e11
-69R6*Emp
-70e4*Name{13E9} 13|30r66 30r81
-71e4*Job{5E9} 13|9m22 22r38
-72i4*Age{integer} 13|27r22 27r36 30r25 30r39
-74i4*Next{integer} 13|10m22 24r32 29r34 33r34 40m25 40r44 42r27 43r32 45m24
+X 17 structures.ads
+3K9*structures 13|1w6 1r22 14|1w6 1r22 17|72e15
+5E9*JobType 14|8r16 22r18 17|8e5
+62R6*Emp 13|8r50 11r83 14|16r79 17|70e11
+63e4*Name{13E9} 14|30r66 30r81
+64e4*Job{5E9} 14|9m22 22r38
+65i4*Age{integer} 14|27r22 27r36 30r25 30r39
+68i4*Prev{integer} 14|11m22 41m25 43m38 48m25 51m39
+69i4*Next{integer} 14|10m22 24r32 29r34 33r34 40m25 40r44 42r27 43r32 45m24
 . 47m25 47r48 49m28 50r28 51r33
-75i4*Prev{integer} 13|11m22 41m25 43m38 48m25 51m39
 
