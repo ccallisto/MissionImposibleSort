@@ -2,7 +2,7 @@ with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 with DoublyLinkedList;
 with structures; use structures;
-with makeemp; use makeemp;
+with MakeEmp; use MakeEmp;
 
 procedure LinkSort is
     type LegalResponse is (yup, affirmative, nope, negative);
@@ -18,6 +18,39 @@ procedure LinkSort is
     SortByJob: Array(JobType) of Integer := (others => 0);
 
 
+function newEmp return Emp is
+    Employee : Emp;
+    TempManu : Manufacturer;
+    TempModel : ModelName;
+    TempVehColor : Color;
+    TempDoors : Integer;
+    TempNumEngines : Integer;
+    Is_Plane : Boolean;
+begin
+    Employee.Name := MakeEmp.Get_Name;
+    Employee.Job := MakeEmp.Get_JobType;
+    Employee.Age := MakeEmp.Get_Age;
+
+    while again in PositiveResponse loop
+
+    TempManu := MakeEmp.Get_Manu;
+    TempModel := MakeEmp.Get_Model;
+    TempDoors := MakeEmp.GetVehInt;
+    TempVehColor := MakeEmp.Get_Color;
+
+
+    Is_Plane := (TempManu = GeneralDynamics or TempManu = Grumman or TempManu = Lockheed or TempManu = Boeing);
+    if Is_Plane then
+        TempNumEngines := TempDoors;
+    end if;
+
+         Add_Vehicle(Employee, TempManu, TempModel, TempVehColor, Is_Plane, TempDoors);
+          Ada.Text_IO.Put("Add another vehicle?");
+        LegalIO.Get(again);
+end loop;
+    return Employee;
+end newEmp;
+
 
 
 begin
@@ -25,7 +58,7 @@ begin
 
    while Again in PositiveResponse loop
 
-      Emp_List.Insert(Emps, Avail, MakeEmp.MakeEmp);
+      Emp_List.Insert(Emps, Avail, newEmp);
       put("Enter another name (yup or nope): ");
       get(Again);
     end loop;
@@ -86,7 +119,7 @@ end loop;
 
 
     Put_Line("");
-    Pt := Emps(Pt).Next;
+    Pt := Emps(Pt).Next; -- Proceed to the next employee
 end loop;
 
  end loop;

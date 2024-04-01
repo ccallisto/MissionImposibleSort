@@ -9,13 +9,13 @@ RV NO_IO
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U doublylinkedlist%b	doublylinkedlist.adb	20190703 NE OO PK GE
+U doublylinkedlist%b	doublylinkedlist.adb	514e3243 NE OO PK GE
 W ada%s			ada.ads			ada.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W structures%s		structures.adb		structures.ali
 
-U doublylinkedlist%s	doublylinkedlist.ads	8b989f98 BN EE NE OO PK GE
+U doublylinkedlist%s	doublylinkedlist.ads	facfaad8 BN EE NE OO PK GE
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W structures%s		structures.adb		structures.ali
 
@@ -35,7 +35,7 @@ D doublylinkedlist.ads	20240401152414 a205c9bd doublylinkedlist%s
 D doublylinkedlist.adb	20240401152414 f7adf9c8 doublylinkedlist%b
 D interfac.ads		20240316000000 15f799c2 interfaces%s
 D i-cstrea.ads		20240316000000 e53d8b8e interfaces.c_streams%s
-D structures.ads	20240401160140 299d5625 structures%s
+D structures.ads	20240401192805 58ca6365 structures%s
 D system.ads		20240316000000 426dafb8 system%s
 D s-crtl.ads		20240316000000 8a0692f8 system.crtl%s
 D s-exctab.ads		20240316000000 91bef6ef system.exception_table%s
@@ -68,7 +68,7 @@ X 13 doublylinkedlist.ads
 3+12 node
 4i7 MaxItems{integer}
 6k9*DoublyLinkedList 3z12 4z7 14l5 14e21 14|3b14 61l5 61t21
-8A12*listArr(17|65R6)<integer> 10r36 11r38 14|5r33 16r35
+8A12*listArr(17|62R6)<integer> 10r36 11r38 14|5r33 16r35
 10U17*Init 10=22 10=45 14|5b14 14l8 14t12
 10a22 list{8A12} 14|5b19 9m10 10m10 11m10
 10i45 avail{integer} 14|5b42 7m7 9r15 10r15 11r15 12m10 12r19
@@ -78,7 +78,7 @@ X 13 doublylinkedlist.ads
 . 51m16 51r21
 11i47 avail{integer} 14|16b44 19r10 20r15 40r18 41r18 43r46 45r32 47r18 48r18
 . 49r36 50r21 51r26 51r47 55m10 55r19
-11r71 newItem{17|65R6} 14|16b67 20r25 22r30 27r28 30r31 30r73
+11r71 newItem{17|62R6} 14|16b67 20r25 22r30 27r28 30r31 30r73
 X 14 doublylinkedlist.adb
 8e11 J{17|5E9} 9r29
 17i7 current{integer} 24m10 26r7 27r13 28r21 29m9 29r25 30r16 30r57 32r21
@@ -86,14 +86,13 @@ X 14 doublylinkedlist.adb
 17i16 previous{integer} 28m9 32m9 39r13 47r38 48r33 49r18
 17i26 head{integer} 22m10 24r26 40r38 41r33 42r21 43r26 45r18
 X 17 structures.ads
-3K9*structures 13|1w6 1r22 14|1w6 1r22 17|75e15
+3K9*structures 13|1w6 1r22 14|1w6 1r22 17|72e15
 5E9*JobType 14|8r16 22r18 17|8e5
-63R6*Emp 13|8r50 11r83 14|16r79 17|73e11
-65R6*Emp
-66e4*Name{13E9} 14|30r66 30r81
-67e4*Job{5E9} 14|9m22 22r38
-68i4*Age{integer} 14|27r22 27r36 30r25 30r39
-71i4*Prev{integer} 14|11m22 41m25 43m38 48m25 51m39
-72i4*Next{integer} 14|10m22 24r32 29r34 33r34 40m25 40r44 42r27 43r32 45m24
+62R6*Emp 13|8r50 11r83 14|16r79 17|70e11
+63e4*Name{13E9} 14|30r66 30r81
+64e4*Job{5E9} 14|9m22 22r38
+65i4*Age{integer} 14|27r22 27r36 30r25 30r39
+68i4*Prev{integer} 14|11m22 41m25 43m38 48m25 51m39
+69i4*Next{integer} 14|10m22 24r32 29r34 33r34 40m25 40r44 42r27 43r32 45m24
 . 47m25 47r48 49m28 50r28 51r33
 

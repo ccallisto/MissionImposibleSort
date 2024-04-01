@@ -59,32 +59,6 @@ begin
     return gColor;
 end Get_Color;
 
-function MakeEmp return Emp is
-    Employee : Emp;
-    TempManu : Manufacturer;
-    TempModel : ModelName;
-    TempVehColor : Color;
-    TempDoors : Integer;
-    TempNumEngines : Integer;
-    Is_Plane : Boolean;
-begin
-    Employee.Name := Get_Name;
-    Employee.Job := Get_JobType;
-    Employee.Age := Get_Age;
 
-    TempManu := Get_Manu;
-    TempModel := Get_Model;
-    TempVehColor := Get_Color;
-    TempDoors := GetVehInt; 
-
-    Is_Plane := (TempManu = GeneralDynamics or TempManu = Grumman or TempManu = Lockheed or TempManu = Boeing);
-    if Is_Plane then
-        TempNumEngines := TempDoors;
-    end if;
-
-    Add_Vehicle(Employee, TempManu, TempModel, TempVehColor, Is_Plane, TempDoors);
-
-    return Employee;
-end MakeEmp;
 
 end MakeEmp;

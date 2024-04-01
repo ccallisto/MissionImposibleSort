@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#42a8e1f1#;
+   u00001 : constant Version_32 := 16#d2d2e50b#;
    pragma Export (C, u00001, "linksortB");
    u00002 : constant Version_32 := 16#7320ff5f#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -340,13 +340,13 @@ package ada_main is
    pragma Export (C, u00149, "ada__text_io__enumeration_auxB");
    u00150 : constant Version_32 := 16#36b07428#;
    pragma Export (C, u00150, "ada__text_io__enumeration_auxS");
-   u00151 : constant Version_32 := 16#20190703#;
+   u00151 : constant Version_32 := 16#514e3243#;
    pragma Export (C, u00151, "doublylinkedlistB");
-   u00152 : constant Version_32 := 16#8b989f98#;
+   u00152 : constant Version_32 := 16#facfaad8#;
    pragma Export (C, u00152, "doublylinkedlistS");
-   u00153 : constant Version_32 := 16#b6ec3326#;
+   u00153 : constant Version_32 := 16#c7bb0666#;
    pragma Export (C, u00153, "structuresB");
-   u00154 : constant Version_32 := 16#75b13776#;
+   u00154 : constant Version_32 := 16#04e60236#;
    pragma Export (C, u00154, "structuresS");
    u00155 : constant Version_32 := 16#35d6ef80#;
    pragma Export (C, u00155, "system__storage_poolsB");
@@ -390,9 +390,9 @@ package ada_main is
    pragma Export (C, u00174, "system__fat_llfS");
    u00175 : constant Version_32 := 16#92946bcf#;
    pragma Export (C, u00175, "system__val_enum_8S");
-   u00176 : constant Version_32 := 16#47c7bdb3#;
+   u00176 : constant Version_32 := 16#60ba9708#;
    pragma Export (C, u00176, "makeempB");
-   u00177 : constant Version_32 := 16#d3d16eaf#;
+   u00177 : constant Version_32 := 16#475bece1#;
    pragma Export (C, u00177, "makeempS");
    u00178 : constant Version_32 := 16#ca878138#;
    pragma Export (C, u00178, "system__concat_2B");

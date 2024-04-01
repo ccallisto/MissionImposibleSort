@@ -20,7 +20,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 
-U structures%b		structures.adb		b6ec3326 NE OO PK IL
+U structures%b		structures.adb		c7bb0666 NE OO PK IL
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 Z system%s		system.ads		system.ali
@@ -28,7 +28,7 @@ Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 Z system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
 Z system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
 
-U structures%s		structures.ads		75b13776 EE OO PF PK IL
+U structures%s		structures.ads		04e60236 EE OO PF PK IL
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.streams%s		a-stream.adb		a-stream.ali
@@ -64,7 +64,7 @@ D a-tienio.adb		20240316000000 c9e6b5af ada.text_io.enumeration_io%b
 D a-unccon.ads		20240316000000 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20240316000000 15f799c2 interfaces%s
 D i-cstrea.ads		20240316000000 e53d8b8e interfaces.c_streams%s
-D structures.ads	20240401160140 299d5625 structures%s
+D structures.ads	20240401192805 58ca6365 structures%s
 D structures.adb	20240401160423 9f716503 structures%b
 D system.ads		20240316000000 426dafb8 system%s
 D s-crtl.ads		20240316000000 8a0692f8 system.crtl%s
@@ -126,7 +126,7 @@ G c Z s s [put structures__color_io 74 14 42_4]
 G c Z s s [vehicle_typeDA structures 45 9 none]
 G c Z s s [vehicle_typeDF structures 45 9 none]
 G c Z s s [vehicle_typeIP structures 45 9 none]
-G c Z s b [add_vehicle structures 74 11 none]
+G c Z s b [add_vehicle structures 71 11 none]
 G c Z s s [carDA structures 51 9 none]
 G c Z s s [carDF structures 51 9 none]
 G c Z s s [carIP structures 51 9 none]
@@ -134,7 +134,7 @@ G c Z s s [planeDA structures 55 9 none]
 G c Z s s [planeDF structures 55 9 none]
 G c Z s s [planeIP structures 55 9 none]
 G c Z s s [Tvehicle_arrayBIP structures 60 1 none]
-G c Z s s [empIP structures 65 6 none]
+G c Z s s [empIP structures 62 6 none]
 X 1 ada.ads
 16K9*Ada 20e8 17|1r6 1r23 10r29 19r29 27r35 35r32 42r28 18|15r13
 X 10 a-textio.ads
@@ -143,8 +143,8 @@ X 10 a-textio.ads
 X 12 a-tienio.ads
 26k21*Enumeration_IO 82e31 17|10r41 19r41 27r47 35r44 42r40
 X 17 structures.ads
-3K9*structures 75l5 75e15 18|1b14 19l5 19t15
-5E9*JobType 8e5 10r56 67r9
+3K9*structures 72l5 72e15 18|1b14 19l5 19t15
+5E9*JobType 8e5 10r56 64r9
 6n7*Programmer{5E9}
 6n19*Manager{5E9}
 6n28*Accountant{5E9}
@@ -154,7 +154,7 @@ X 17 structures.ads
 7n29*Inventory{5E9}
 7n40*SoftwareEngineer{5E9}
 10K12*JobTypeIO[12|26] 11r8
-13E9*EmpName 17e5 19r56 66r10
+13E9*EmpName 17e5 19r56 63r10
 14n7*David{13E9}
 14n14*Kevin{13E9}
 14n21*Sam{13E9}
@@ -174,7 +174,7 @@ X 17 structures.ads
 16n7*Dustin{13E9}
 16n15*Desire{13E9}
 19K12*EmpNameIO[12|26] 20r8
-22E11*Manufacturer 25e5 27r62 46r13 74r53 18|3r57
+22E11*Manufacturer 25e5 27r62 46r13 71r53 18|3r57
 23n7*Ford{22E11}
 23n13*GMC{22E11}
 23n18*Dodge{22E11}
@@ -184,7 +184,7 @@ X 17 structures.ads
 24n33*Lockheed{22E11}
 24n43*Boeing{22E11}
 27K12*Manufacturer_IO[12|26] 28r8
-30E9*ModelName 33e5 35r59 47r14 74r75 18|3r79
+30E9*ModelName 33e5 35r59 47r14 71r75 18|3r79
 31n7*Expedition{30E9}
 31n19*Raptor{30E9}
 31n27*Pickup{30E9}
@@ -198,7 +198,7 @@ X 17 structures.ads
 32n25*F35{30E9}
 32n30*B747{30E9}
 35K12*ModelName_IO[12|26] 36r8
-38E9*Color 40e5 42r55 48r17 74r97 18|3r101
+38E9*Color 40e5 42r55 48r17 71r97 18|3r101
 39n7*Blue{38E9}
 39n13*Red{38E9}
 39n18*White{38E9}
@@ -216,24 +216,22 @@ X 17 structures.ads
 55R9*Plane<45R9> 57e14 18|8r36
 56i7*NumEngines{integer} 18|8m95
 59P6*Vehicle_Ptr(45R9) 60r50 18|4r23
-60A6*Vehicle_Array(59P6)<integer> 69r14
-63R6*Emp 64r28 65c6 73e11 74r41 18|3r45
-64P6*Emp_Ptr(63R6)
-65R6*Emp
-66e4*Name{13E9}
-67e4*Job{5E9}
-68i4*Age{integer}
-69a4*Vehicles{60A6} 18|6r46 13m22
-70i4*Vehicle_Count{integer} 18|6r21 12m22 12r48 13r40
-71i4*Prev{integer}
-72i4*Next{integer}
-74U11*Add_Vehicle 74=23 74>46 74>67 74>86 74>104 74>124 18|3b15 17l9 17t20
-74r23 Employee{65R6} 18|3b27 6r12 6r37 12m13 12r39 13m13 13r31
-74e46 Manu{22E11} 18|3b50 8r51 10r49
-74e67 Model{30E9} 18|3b71 8r66 10r64
-74e86 VehColor{38E9} 18|3b90 8r85 10r83
-74b104 Is_Plane{boolean} 18|3b108 7r16
-74i124 NumDoorsOrEngines{integer} 18|3b128 8r109 10r102
+60A6*Vehicle_Array(59P6)<integer> 66r14
+62R6*Emp 70e11 71r41 18|3r45
+63e4*Name{13E9}
+64e4*Job{5E9}
+65i4*Age{integer}
+66a4*Vehicles{60A6} 18|6r46 13m22
+67i4*Vehicle_Count{integer} 18|6r21 12m22 12r48 13r40
+68i4*Prev{integer}
+69i4*Next{integer}
+71U11*Add_Vehicle 71=23 71>46 71>67 71>86 71>104 71>124 18|3b15 17l9 17t20
+71r23 Employee{62R6} 18|3b27 6r12 6r37 12m13 12r39 13m13 13r31
+71e46 Manu{22E11} 18|3b50 8r51 10r49
+71e67 Model{30E9} 18|3b71 8r66 10r64
+71e86 VehColor{38E9} 18|3b90 8r85 10r83
+71b104 Is_Plane{boolean} 18|3b108 7r16
+71i124 NumDoorsOrEngines{integer} 18|3b128 8r109 10r102
 X 18 structures.adb
 4p9 New_Vehicle{17|59P6} 8m17 10m17 13r58
 X 19 system.ads

@@ -59,9 +59,6 @@ package structures is
 type Vehicle_Ptr is access all vehicle_type'Class;
 type Vehicle_Array is array (1 .. 10) of aliased Vehicle_Ptr;
 
-
-type Emp;
-type Emp_Ptr is access all Emp;
 type Emp is record
    Name: EmpName;
    Job: JobType;
