@@ -40,7 +40,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#ddd8cf90#;
+   u00001 : constant Version_32 := 16#42a8e1f1#;
    pragma Export (C, u00001, "linksortB");
    u00002 : constant Version_32 := 16#7320ff5f#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -390,10 +390,14 @@ package ada_main is
    pragma Export (C, u00174, "system__fat_llfS");
    u00175 : constant Version_32 := 16#92946bcf#;
    pragma Export (C, u00175, "system__val_enum_8S");
-   u00176 : constant Version_32 := 16#ca878138#;
-   pragma Export (C, u00176, "system__concat_2B");
-   u00177 : constant Version_32 := 16#f796dc4f#;
-   pragma Export (C, u00177, "system__concat_2S");
+   u00176 : constant Version_32 := 16#47c7bdb3#;
+   pragma Export (C, u00176, "makeempB");
+   u00177 : constant Version_32 := 16#d3d16eaf#;
+   pragma Export (C, u00177, "makeempS");
+   u00178 : constant Version_32 := 16#ca878138#;
+   pragma Export (C, u00178, "system__concat_2B");
+   u00179 : constant Version_32 := 16#f796dc4f#;
+   pragma Export (C, u00179, "system__concat_2S");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -572,6 +576,8 @@ package ada_main is
    --  structures%b
    --  doublylinkedlist%s
    --  doublylinkedlist%b
+   --  makeemp%s
+   --  makeemp%b
    --  linksort%b
    --  END ELABORATION ORDER
 

@@ -18,7 +18,7 @@ RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 
-U linksort%b		linksort.adb		ddd8cf90 NE OO SU
+U linksort%b		linksort.adb		42a8e1f1 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -28,6 +28,7 @@ W ada.text_io%s		a-textio.adb		a-textio.ali
 Z ada.text_io.enumeration_aux%s  a-tienau.adb	a-tienau.ali
 Z ada.text_io.enumeration_io%s
 W doublylinkedlist%s	doublylinkedlist.adb	doublylinkedlist.ali
+W makeemp%s		makeemp.adb		makeemp.ali
 W structures%s		structures.adb		structures.ali
 Z system%s		system.ads		system.ali
 Z system.concat_2%s	s-conca2.adb		s-conca2.ali
@@ -58,7 +59,8 @@ D doublylinkedlist.ads	20240401152414 a205c9bd doublylinkedlist%s
 D doublylinkedlist.adb	20240401152414 f7adf9c8 doublylinkedlist%b
 D interfac.ads		20240316000000 15f799c2 interfaces%s
 D i-cstrea.ads		20240316000000 e53d8b8e interfaces.c_streams%s
-D linksort.adb		20240401161347 fc27b8ff linksort%b
+D linksort.adb		20240401182831 991bae14 linksort%b
+D makeemp.ads		20240401182059 fa4c388a makeemp%s
 D structures.ads	20240401160140 299d5625 structures%s
 D system.ads		20240316000000 426dafb8 system%s
 D s-assert.ads		20240316000000 9c4520c7 system.assertions%s
@@ -98,112 +100,77 @@ D s-wchcon.ads		20240316000000 d9032363 system.wch_con%s
 D s-widuns.ads		20240316000000 866a5800 system.wid_uns%s
 D s-widthu.ads		20240316000000 b32f15e2 system.width_u%s
 G a e
-G c Z b b [linksort standard 6 11 none]
-G r i none [linksort standard 6 11 none] [doublylinkedlist standard 6 9 none]
-G r s emp [linksort standard 6 11 none] [empIP structures 65 6 none]
-G r c none [linksort standard 6 11 none] [add_vehicle structures 74 11 none]
+G c Z b b [linksort standard 7 11 none]
+G r i none [linksort standard 7 11 none] [doublylinkedlist standard 6 9 none]
+G r s emp [linksort standard 7 11 none] [empIP structures 65 6 none]
+G r c none [linksort standard 7 11 none] [makeemp makeemp 11 13 none]
 X 1 ada.ads
-16K9*Ada 20e8 25|1r6 1r23 2r6 2r31 9r28
+16K9*Ada 20e8 25|1r6 1r23 2r6 2r31 10r28
 X 5 a-inteio.ads
 18K13*Integer_Text_IO[19|46] 25|2w10 2r35
 X 14 a-tags.ads
-652V13 CW_Membership{boolean} 25|156s35 160s35
+652V13 CW_Membership{boolean} 25|75s35 79s35
 X 15 a-textio.ads
-58K13*Text_IO 787e16 25|1w10 1r27 9r32
-282U14*New_Line 25|125s9 127s9
-519U14*Put 25|21s5 29s5 37s5 45s5 53s5 61s5 69s5 110s7 126s9 135s5 136s5
-. 137s5 138s5 139s5 140s5 147s13 148s13 149s13 150s13 151s13 152s13 155s17
-. 156s17 157s17 159s17 160s17 161s17
-566U14*Put_Line 25|169s5
+58K13*Text_IO 787e16 25|1w10 1r27 10r32
+282U14*New_Line 25|44s9 46s9
+519U14*Put 25|29s7 45s9 54s5 55s5 56s5 57s5 58s5 59s5 66s13 67s13 68s13 69s13
+. 70s13 71s13 74s17 75s17 76s17 78s17 79s17 80s17
+566U14*Put_Line 25|88s5
 X 17 a-tienio.ads
-26k21*Enumeration_IO 82e31 25|9r40
-35U14*Get 25|22s15[26|10] 38s18[26|35] 46s21[26|27] 62s15[26|19] 70s14[26|42]
-. 111s7[9]
-X 19 a-tiinio.ads
-60U14*Get 25|30s5[5|18] 54s5[5|18]
-61i7 Item{integer} 25|30r9[5|18] 54r9[5|18]
+26k21*Enumeration_IO 82e31 25|10r40
+35U14 Get 25|30s7[10]
 X 21 doublylinkedlist.ads
-6k9*DoublyLinkedList 14e21 25|3w6 12r28
-8A12 listArr(26|65R6)<integer> 25|13r21[12]
-10U17 Init 25|105s14[12]
-11U17 Insert 25|109s16[12]
+6k9*DoublyLinkedList 14e21 25|3w6 13r28
+8A12 listArr(27|65R6)<integer> 25|14r21[13]
+10U17 Init 25|24s14[13]
+11U17 Insert 25|28s16[13]
 X 25 linksort.adb
-6U11*LinkSort 6b11 174l5 174t13
-7E10 LegalResponse 7e61 8r33 9r55 15r12
-7n28 yup{7E10} 8r53
-7n33 affirmative{7E10} 8r58 15r29
-7n46 nope{7E10}
-7n52 negative{7E10}
-8E13 PositiveResponse{7E10} 107r19
-9K13 LegalIO[17|26] 10r9
-12K12 Emp_List[21|6] 13r12 105r5 109r7
-13a5 Emps{21|8A12[12]} 105m19 105r19 109m23 109r23 120r26 121r27 131r19 135r23
-. 137r23 139r23 142r23 144r42 170r11
-14i5 Avail{integer} 105m25 105r25 109m29 109r29 119r23
-15e5 Again{7E10} 107r10 111m11
-16i5 Pt{integer} 129m9 130r12 131m13 131r24 134r11 135r28 137r28 139r28 142r28
-. 144r47 170m5 170r16
-17a5 SortByJob(integer) 116m13 120r16 121m17 129r15
-18V10 Get_JobType{26|5E9} 18b10 24l5 24t16 84s21
-19e7 gJob{26|5E9} 22m19 23r12
-26V10 Get_Age{integer} 26b10 32l5 32t12 85s21
-27i5 gAge{integer} 30m17 31r12
-34V10 Get_Model{26|30E9} 34b10 40l5 40t14 88s18
-35e5 gModel{26|30E9} 38m22 39r12
-42V10 Get_Manu{26|22E11} 42b10 48l5 48t13 87s17
-43e5 gManu{26|22E11} 46m25 47r12
-50V10 GetVehInt{integer} 50b10 56l5 56t14 90s18
-51i5 doors{integer} 54m17 55r12
-58V10 Get_Name{26|13E9} 58b10 64l5 64t13 83s22
-59e5 gName{26|13E9} 62m19 63r12
-66V10 Get_Color{26|38E9} 66b10 72l5 72t14 89s21
-67e5 gColor{26|38E9} 70m18 71r12
-74V10 MakeEmp{26|65R6} 74b10 100l5 100t12 109s36
-75r5 Employee{26|65R6} 83m5 84m5 85m5 97m17 97r17 99r12
-76e5 TempManu{26|22E11} 87m5 92r18 92r48 92r70 92r93 97r27
-77e5 TempModel{26|30E9} 88m5 97r37
-78e5 TempVehColor{26|38E9} 89m5 97r48
-79i5 TempDoors{integer} 90m5 94r27 97r72
-80i5 TempNumEngines{integer} 94m9
-81b5 Is_Plane{boolean} 92m5 93r8 97r62
-114e8 J{26|5E9} 116r23
-119i13 I{integer} 120r31 121r32 121r43
-124e9 I{26|5E9} 126r43 129r25
-142i9 Index{integer} 144r60
-144p9 Current_Vehicle{26|59P6} 146r12 147r36 149r33 151r29 154r16 156r39
-. 158r19 160r41
-X 26 structures.ads
-3K9*structures 25|4w6 4r22 26|75e15
-5E9*JobType 25|17r22 18r29 19r14 114r13 124r14 126r29 139r9 26|8e5
-10K12*JobTypeIO[17|26] 25|22r5
-13E9*EmpName 25|58r26 59r13 135r9 26|17e5
-19K12*EmpNameIO[17|26] 25|62r5
-22E11*Manufacturer 25|42r26 43r13 76r16 147r17 26|25e5
-24n7*GeneralDynamics{22E11} 25|92r29
-24n24*Grumman{22E11} 25|92r59
-24n33*Lockheed{22E11} 25|92r81
-24n43*Boeing{22E11} 25|92r104
-27K12*Manufacturer_IO[17|26] 25|46r5
-30E9*ModelName 25|34r27 35r14 77r17 149r17 26|33e5
-35K12*ModelName_IO[17|26] 25|38r5
-38E9*Color 25|66r27 67r14 78r20 151r17 26|40e5
-42K12*Color_IO[17|26] 25|70r5
-46e7*Manu{22E11} 25|147r56
-47e7*Model{30E9} 25|149r53
-48e7*VehColor{38E9} 25|151r49
-51R9*Car<45R9> 25|154r39 156r35 26|53e14
-52i7*Doors{integer} 25|156r60
-55R9*Plane<45R9> 25|158r42 160r35 26|57e14
-56i7*NumEngines{integer} 25|160r62
-59P6*Vehicle_Ptr(45R9) 25|144r27
+7U11*LinkSort 7b11 93l5 93t13
+8E10 LegalResponse 8e61 9r33 10r55 16r12
+8n28 yup{8E10} 9r53
+8n33 affirmative{8E10} 9r58 16r29
+8n46 nope{8E10}
+8n52 negative{8E10}
+9E13 PositiveResponse{8E10} 26r19
+10K13 LegalIO[17|26] 11r9
+13K12 Emp_List[21|6] 14r12 24r5 28r7
+14a5 Emps{21|8A12[13]} 24m19 24r19 28m23 28r23 39r26 40r27 50r19 54r23 56r23
+. 58r23 61r23 63r42 89r11
+15i5 Avail{integer} 24m25 24r25 28m29 28r29 38r23
+16e5 Again{8E10} 26r10 30m11
+17i5 Pt{integer} 48m9 49r12 50m13 50r24 53r11 54r28 56r28 58r28 61r28 63r47
+. 89m5 89r16
+18a5 SortByJob(integer) 35m13 39r16 40m17 48r15
+33e8 J{27|5E9} 35r23
+38i13 I{integer} 39r31 40r32 40r43
+43e9 I{27|5E9} 45r43 48r25
+61i9 Index{integer} 63r60
+63p9 Current_Vehicle{27|59P6} 65r12 66r36 68r33 70r29 73r16 75r39 77r19 79r41
+X 26 makeemp.ads
+2K9*MakeEmp 25|5w6 5r19 28r36 26|13e12
+11V13*MakeEmp{27|65R6} 25|28s44
+X 27 structures.ads
+3K9*structures 25|4w6 4r22 27|75e15
+5E9*JobType 25|18r22 33r13 43r14 45r29 58r9 27|8e5
+13E9*EmpName 25|54r9 27|17e5
+22E11*Manufacturer 25|66r17 27|25e5
+30E9*ModelName 25|68r17 27|33e5
+38E9*Color 25|70r17 27|40e5
+46e7*Manu{22E11} 25|66r56
+47e7*Model{30E9} 25|68r53
+48e7*VehColor{38E9} 25|70r49
+51R9*Car<45R9> 25|73r39 75r35 27|53e14
+52i7*Doors{integer} 25|75r60
+55R9*Plane<45R9> 25|77r42 79r35 27|57e14
+56i7*NumEngines{integer} 25|79r62
+59P6*Vehicle_Ptr(45R9) 25|63r27
 60A6*Vehicle_Array(59P6)<integer>
-63R6*Emp 25|12r45 74r25 75r16 26|73e11
+63R6*Emp 25|13r45 27|73e11
 65R6*Emp
-66e4*Name{13E9} 25|83m14 135r32
-67e4*Job{5E9} 25|84m14 120r34 121r35 139r32
-68i4*Age{integer} 25|85m14 137r32
-69a4*Vehicles{60A6} 25|144r51
-70i4*Vehicle_Count{integer} 25|142r32
-72i4*Next{integer} 25|131r28 170r20
-74U11*Add_Vehicle 25|97s5
+66e4*Name{13E9} 25|54r32
+67e4*Job{5E9} 25|39r34 40r35 58r32
+68i4*Age{integer} 25|56r32
+69a4*Vehicles{60A6} 25|63r51
+70i4*Vehicle_Count{integer} 25|61r32
+72i4*Next{integer} 25|50r28 89r20
 

@@ -42,6 +42,7 @@ package body ada_main is
    E139 : Short_Integer; pragma Import (Ada, E139, "system__img_lli_E");
    E154 : Short_Integer; pragma Import (Ada, E154, "structures_E");
    E152 : Short_Integer; pragma Import (Ada, E152, "doublylinkedlist_E");
+   E177 : Short_Integer; pragma Import (Ada, E177, "makeemp_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -267,6 +268,7 @@ package body ada_main is
       structures'elab_spec;
       E154 := E154 + 1;
       E152 := E152 + 1;
+      E177 := E177 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -306,6 +308,7 @@ package body ada_main is
 --  BEGIN Object file/option list
    --   /home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/structures.o
    --   /home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/doublylinkedlist.o
+   --   /home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/makeemp.o
    --   /home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/linksort.o
    --   -L/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/
    --   -L/home/callisto/Desktop/DSA/Lab2/MissionImposibleSort/obj/
