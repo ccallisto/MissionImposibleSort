@@ -1,0 +1,21 @@
+Kevin Analysist 23
+Ford Expedition 4 Blue nope yup
+Ben    Manager    57
+Ford Raptor 4  Red nope yup
+Sable Accountant 26
+GMC  Pickup    2 White nope yup
+Bob
+Manager
+43
+Dodge Devil 2 Orange nope yup
+Teddy  Programmer  17
+Chevrolet Camaro  4 Black nope yup
+Donald Sales 36
+Ford Expedition  4  White yup
+GeneralDynamics F_16 1 silver yup
+GeneralDynamics F_16 1 camo yup
+Grumman Commercial 4 White yup
+Lockheed F35 1 silver yup
+Boeing B747 5 silver nope nope
+
+

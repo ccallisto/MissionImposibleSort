@@ -1,0 +1,22 @@
+Enter Employee Name: Enter Job Type: Enter Age: Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter another name (yup or nope): Enter Employee Name: Enter Job Type: Enter Age: Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter another name (yup or nope): Enter Employee Name: Enter Job Type: Enter Age: Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter another name (yup or nope): Enter Employee Name: Enter Job Type: Enter Age: Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter another name (yup or nope): Enter Employee Name: Enter Job Type: Enter Age: Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter another name (yup or nope): Enter Employee Name: Enter Job Type: Enter Age: Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter Manufacturer: Enter Vehicle Model: Enter Number of Doors/EnginesEnter Vehicle Color: Add another vehicle?Enter another name (yup or nope): 
+Job Type = PROGRAMMER
+TEDDY  17 PROGRAMMER , CHEVROLET  CAMARO  BLACK   Doors:  4;
+
+Job Type = MANAGER
+BOB  43 MANAGER , DODGE  DEVIL  ORANGE   Doors:  2;
+BEN  57 MANAGER , FORD  RAPTOR  RED   Doors:  4;
+
+Job Type = ACCOUNTANT
+SABLE  26 ACCOUNTANT , GMC  PICKUP  WHITE   Doors:  2;
+
+Job Type = ANALYSIST
+KEVIN  23 ANALYSIST , FORD  EXPEDITION  BLUE   Doors:  4;
+
+Job Type = SALES
+DONALD  36 SALES , FORD  EXPEDITION  WHITE   Doors:  4;GENERALDYNAMICS  F_16  SILVER   Engines:  1;GENERALDYNAMICS  F_16  CAMO   Engines:  1;GRUMMAN  COMMERCIAL  WHITE   Engines:  4;LOCKHEED  F35  SILVER   Engines:  1;BOEING  B747  SILVER   Engines:  5;
+
+Job Type = MANUFACTURING
+
+Job Type = INVENTORY
+
+Job Type = SOFTWAREENGINEER

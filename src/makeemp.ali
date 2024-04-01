@@ -1,0 +1,107 @@
+V "GNAT Lib v13"
+P SS ZX
+
+RN
+RV NO_IO
+
+U makeemp%b		makeemp.adb		60ba9708 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W structures%s		structures.adb		structures.ali
+
+U makeemp%s		makeemp.ads		475bece1 EE NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W structures%s		structures.adb		structures.ali
+
+D ada.ads		20240316000000 76789da1 ada%s
+D a-except.ads		20240316000000 2a7d8d70 ada.exceptions%s
+D a-finali.ads		20240316000000 bf4f806b ada.finalization%s
+D a-inteio.ads		20240316000000 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20240316000000 40018c65 ada.io_exceptions%s
+D a-stream.ads		20240316000000 119b8fb3 ada.streams%s
+D a-string.ads		20240316000000 90ac6797 ada.strings%s
+D a-sttebu.ads		20240316000000 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240316000000 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240316000000 9eaa38c6 ada.tags%s
+D a-textio.ads		20240316000000 5c2c6153 ada.text_io%s
+D a-tienio.ads		20240316000000 107ce547 ada.text_io.enumeration_io%s
+D a-tiinio.ads		20240316000000 e58fa6fb ada.text_io.integer_io%s
+D a-unccon.ads		20240316000000 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20240316000000 15f799c2 interfaces%s
+D i-cstrea.ads		20240316000000 e53d8b8e interfaces.c_streams%s
+D makeemp.ads		20240401185430 1f918f84 makeemp%s
+D makeemp.adb		20240401185134 8d86931e makeemp%b
+D structures.ads	20240401192805 58ca6365 structures%s
+D system.ads		20240316000000 426dafb8 system%s
+D s-crtl.ads		20240316000000 8a0692f8 system.crtl%s
+D s-exctab.ads		20240316000000 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240316000000 dc5161d4 system.file_control_block%s
+D s-finmas.ads		20240316000000 bd688734 system.finalization_masters%s
+D s-finroo.ads		20240316000000 4ff27390 system.finalization_root%s
+D s-parame.ads		20240316000000 d494a4a6 system.parameters%s
+D s-pooglo.ads		20240316000000 91708d21 system.pool_global%s
+D s-putima.ads		20240316000000 17291fe4 system.put_images%s
+D s-retsta.ads		20240316000000 0f6b06cb system.return_stack%s
+D s-secsta.ads		20240316000000 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240316000000 df77073e system.soft_links%s
+D s-stache.ads		20240316000000 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240316000000 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240316000000 ab5468e4 system.storage_elements%s
+D s-stoele.adb		20240316000000 8f5a9db6 system.storage_elements%b
+D s-stopoo.ads		20240316000000 e9fa2dd8 system.storage_pools%s
+D s-stratt.ads		20240316000000 f7dfd786 system.stream_attributes%s
+D s-traent.ads		20240316000000 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240316000000 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20240316000000 d9032363 system.wch_con%s
+G a e
+G c Z s b [get_jobtype makeemp 4 13 none]
+G c Z s b [get_age makeemp 6 13 none]
+G c Z s b [get_model makeemp 8 13 none]
+G c Z s b [get_manu makeemp 10 13 none]
+G c Z s b [getvehint makeemp 12 13 none]
+G c Z s b [get_name makeemp 14 13 none]
+G c Z s b [get_color makeemp 16 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 18|1r6 1r23 3r6 3r31 18r11
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[13|46] 18|3w10 3r35 18r15
+X 11 a-textio.ads
+58K13*Text_IO 787e16 18|1w10 1r27
+519U14*Put 18|9s5 17s5 25s5 33s5 41s5 49s5 57s5
+X 12 a-tienio.ads
+35U14*Get 18|10s15[19|10] 26s18[19|35] 34s21[19|27] 50s15[19|19] 58s14[19|42]
+X 13 a-tiinio.ads
+60U14*Get 18|18s31[4|18] 42s5[4|18]
+61i7 Item{integer} 18|42r9[4|18]
+X 17 makeemp.ads
+2K9*MakeEmp 19l5 19e12 18|4b14 64l5 64t12
+4V13*Get_JobType{19|5E9} 18|6b13 12l5 12t16
+6V13*Get_Age{integer} 18|14b10 20l5 20t12
+8V13*Get_Model{19|30E9} 18|22b10 28l5 28t14
+10V13*Get_Manu{19|22E11} 18|30b10 36l5 36t13
+12V13*GetVehInt{integer} 18|38b10 44l5 44t14
+14V13*Get_Name{19|13E9} 18|46b10 52l5 52t13
+16V13*Get_Color{19|38E9} 18|54b10 60l5 60t14
+X 18 makeemp.adb
+7e7 gJob{19|5E9} 10m19 11r12
+15i5 gAge{integer} 18m35 19r14
+23e5 gModel{19|30E9} 26m22 27r12
+31e5 gManu{19|22E11} 34m25 35r12
+39i5 doors{integer} 42m17 43r12
+47e5 gName{19|13E9} 50m19 51r12
+55e5 gColor{19|38E9} 58m18 59r12
+X 19 structures.ads
+3K9*structures 17|1w6 1r22 18|2w6 2r22 19|72e15
+5E9*JobType 17|4r32 18|6r32 7r14 19|8e5
+10K12*JobTypeIO[12|26] 18|10r5
+13E9*EmpName 17|14r29 18|46r26 47r13 19|17e5
+19K12*EmpNameIO[12|26] 18|50r5
+22E11*Manufacturer 17|10r29 18|30r26 31r13 19|25e5
+27K12*Manufacturer_IO[12|26] 18|34r5
+30E9*ModelName 17|8r30 18|22r27 23r14 19|33e5
+35K12*ModelName_IO[12|26] 18|26r5
+38E9*Color 17|16r30 18|54r27 55r14 19|40e5
+42K12*Color_IO[12|26] 18|58r5
+
